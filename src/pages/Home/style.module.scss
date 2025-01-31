@@ -1,0 +1,121 @@
+@use './../../styles/colors'as *;
+
+.home {
+    margin-top: 16rem;
+
+    @media (max-width: 768px) {
+        margin-top: 13rem;
+    } 
+
+    &__title {
+        color: hsla(0, 0%, 100%, 0.36);
+        font-family: "GeologicaLight";
+        font-weight: 300;
+        font-size: 6rem;
+        margin-left: 2rem;
+
+        @media (max-width: 768px) {
+            font-size: 2.6rem;
+        } 
+    }
+
+    &__subtitle {
+        color: $fontWhite;
+        font-family: "GeologicaLight";
+        font-weight: 600;
+        font-size: 6rem;
+
+        @media (max-width: 768px) {
+            font-size: 3.8rem;
+        } 
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 1rem;
+        margin-top: 12.2rem;
+        padding: 5.9rem 2.8rem;
+        border-radius: 2.4rem;
+        background-color: $backgroundWhite;
+
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 80vh 80vh 40vh 80vh 80vh 80vh 80vh 40vh;
+            gap: 16px;
+            margin-top: 5rem;
+            padding: 0;
+        } 
+    }
+
+    &__item1 {
+        grid-row: span 3 / span 3;
+        height: auto;
+        background-color: $backgroundGray;
+    }
+    
+    &__item2 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        height: auto;
+    }
+    
+    &__item3 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        height: auto;
+    }
+    
+    &__item4 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        height: auto;
+        
+    }
+    
+    &__item5 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-row-start: 5;
+        height: auto;
+    }
+    
+    &__item6 {
+        grid-row: span 3 / span 3;
+        grid-column-start: 3;
+        grid-row-start: 5;
+        height: auto;
+    }
+    
+    &__item7 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-row-start: 7;
+        height: auto;
+    }
+    
+    &__item8 {
+        grid-column-start: 3;
+        grid-row-start: 8;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        &__item1,
+        &__item2,
+        &__item3,
+        &__item4,
+        &__item5,
+        &__item6,
+        &__item7, 
+        &__item8 {
+            all: unset;
+        }
+    }
+}

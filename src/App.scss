@@ -1,0 +1,44 @@
+@import './styles/_colors';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+.interactive {
+  pointer-events: all;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $backgroundBlack;
+  line-height: 1.25;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,124 @@
+@use './../../styles/colors'as *;
+
+.card {
+    position: relative;
+    border-radius: 2.4rem;
+    overflow: hidden;
+
+    &__chips {
+        position: absolute;
+        left: 3.8rem;
+        top: 3.8rem;
+        color: $fontBlack;
+    }
+
+    &__title {
+        margin-top: 15.5rem;
+        margin-left: 3.8rem;
+        height: 15%;
+        font-size: 5.5rem;
+        font-family: 'GeologicaLight';
+        font-weight: 600;
+
+       
+        @media (max-width: 768px) {
+            font-size: 5.5rem;
+        } 
+
+        @media (max-width: 1280px) {
+            font-size: 3.5rem;
+            margin-top: 10.5rem;
+        }
+    }
+  }
+  
+.card--small {
+    &__backdropContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__backdrop {
+        width: 100%;
+        height: 100%;
+        // object-fit: fill;
+    }
+
+    &__image {
+        position: absolute;
+        width: 85%;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+}
+
+.card--middle {
+    &__backdropContainer {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__backdrop {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__image {
+        position: absolute;
+        height: 60%;
+        top: 60%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+            top: 65%; 
+            height: 65%;
+        }
+    }
+}
+
+.card--large {
+    &__title {
+        color: $fontWhite;
+    }
+
+    &__backdropContainer {
+        position: absolute;
+        height: 75%;
+        bottom: -2%;
+        right: 0;
+
+        @media (max-width: 768px) {
+            width: 200%;
+            height: 73%;
+            left: 2rem;
+        }
+    }
+
+    &__backdrop {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__image {
+        position: absolute;
+        height: 52%;
+        bottom: 0;
+        left: 16%;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+            left: 5%;
+            height: 42%;
+        }
+    }
+}
+  

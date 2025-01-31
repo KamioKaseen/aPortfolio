@@ -1,0 +1,41 @@
+@use "./colors" as *;
+
+@font-face {
+  font-family: 'GeologicaLight';
+  src: url('../assets/fonts/Geologica-Light.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  font-size: 62.5%;
+}
+
+.interactive {
+  pointer-events: all;
+}
+
+body {
+  background-color: $backgroundBlack;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

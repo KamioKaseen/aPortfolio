@@ -31,6 +31,7 @@
     }
 
     &__grid {
+        
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr);
@@ -46,7 +47,7 @@
             grid-template-rows: 80vh 80vh 40vh 80vh 80vh 80vh 80vh 40vh;
             gap: 16px;
             margin-top: 5rem;
-            padding: 0;
+            padding: 1.6rem;
         } 
     }
 

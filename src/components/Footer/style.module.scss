@@ -26,8 +26,8 @@
         align-items: center;
         padding: 0 2.2rem;
         border-radius: 50%;
-        background-color: $backgroundChips;
-        color: $fontWhite;
+        background-color: $bg-chips;
+        color: $font-white;
         font-size: 2.7rem;
 
         @media (max-width: 1280px) {
@@ -38,7 +38,7 @@
 
     &__copyright {
         margin-top: 2.2rem;
-        color: $fontGray;
+        color: $font-gray;
     }
 
     @media (max-width: 768px) {

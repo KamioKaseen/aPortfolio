@@ -16,18 +16,18 @@ const Home = () => {
           size='middle'
           type='Пет-проект' 
           title='Ony – твой психолог'
-          backdrop='./mountain.png'        
           image='./phone.png'
-          backgroundColor='$backgroundGray'  
-          chipsColor={'black'}
+          backgroundColor='$backgroundGray' 
+          backgroundImage='url(./mountain.png' 
+          chipsBlack={true}
           className={styles.home__item1}/>
           
         <Card
           size='large'
-          type='Integlab' 
+          type='Orbite' 
           title='Корпоративная база знаний'
           backdrop='./knowledge-base.png'    
-          image='./knowledge-base-phone.png'   
+          phoneLarge='./knowledge-base-phone.png'   
           backgroundColor='black'    
           className={styles.home__item2}/>
        
@@ -36,15 +36,16 @@ const Home = () => {
           type='Integlab' 
           backdrop='' 
           image='./dailyUI.png'     
-          backgroundColor='black'     
+          backgroundColor='black'  
+          backgroundImage='url(./dailyUI-back.png'    
           className={styles.home__item3}/>
 
         <Card
           size='large'
-          type='Integlab' 
+          type='Orbite' 
           title='Клиентский модуль в трекере задач'
           backdrop='./issue-tracker.png'  
-          image='./issue-tracker-phone.png'
+          phoneLarge='./issue-tracker-phone.png'
           backgroundColor='rgba(55, 74, 250, 1)'         
           className={styles.home__item4}/>
 
@@ -60,25 +61,24 @@ const Home = () => {
           size='middle'
           type='Baikal' 
           title='Легенда Байкала'
-          backdrop='./baikal.png' 
           backgroundColor='rgb(243, 243, 243)'   
-          // image='./phone.png'
-          chipsColor='black'
+          backgroundImage='url(./baikal-back.png)' 
+          image='./botel.png'
           className={styles.home__item6}/>
 
         <Card
           size='large'
           type='Integlab' 
-          title='Улучшение формы'
+          title='Редизайн, увеличивший конверсию'
           backdrop='./form.png'        
-          image='./form-phone.png'
+          phoneLarge='./form-phone.png'
           backgroundColor='#191722'  
           className={styles.home__item7}/>
         
         <Card
           size='small'
           type='Integlab' 
-          backdrop='./notebook.png'  
+          backgroundImage='url(./profile.png)' 
           className={styles.home__item8}/>
       </div>
     </div>

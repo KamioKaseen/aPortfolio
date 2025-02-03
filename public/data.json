@@ -1,0 +1,17 @@
+[
+    {
+        "route": "ony",
+        "title": "Проект А",
+        "image": "./images/projectA.png",
+        "description": "Описание проекта А",
+        "additionalText": "Дополнительный текст проекта А"
+      },
+      {
+        "route": "knowledgebase",
+        "title": "Проект Б",
+        "image": "./images/projectB.png",
+        "description": "Описание проекта Б",
+        "additionalText": "Дополнительный текст проекта Б"
+      }
+]
+    

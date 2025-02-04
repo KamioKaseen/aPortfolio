@@ -20,20 +20,30 @@
         }
     }
 
-    &__up {
+    &__arrowContainer {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 2.2rem;
         border-radius: 50%;
+        padding: 0 2.4rem;
         background-color: $bg-chips;
         color: $font-white;
-        font-size: 2.7rem;
+
+        &:hover {
+            background-color: $bg-white;
+            color: $font-black;
+            cursor: pointer;
+        }
 
         @media (max-width: 1280px) {
-            padding: 0 1.3rem;
+            padding: 0 1rem;
             font-size: 1.7rem;
         } 
+    }
+
+    &__arrow {
+        width: 100%;
+        color: inherit;
     }
 
     &__copyright {

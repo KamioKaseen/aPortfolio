@@ -1,10 +1,12 @@
 import styles from './style.module.scss';
 import Card from '../../components/Card';
+import { useRef } from 'react';
 
 const Home = () => {
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={styles.home}>
+    <div ref={ref} id="home__title" className={styles.home}>
       <h1 className={styles.home__title}>
         Привет, меня зовут Алина <br/> 
         <span className={styles.home__subtitle}>Я UI/UX дизайнер</span>
@@ -14,7 +16,7 @@ const Home = () => {
         
         <Card 
           size='middle'
-          type='Пет-проект' 
+          type='OnyAI' 
           title='Ony – твой психолог'
           image='./phone.png'
           backgroundColor='$backgroundGray' 
@@ -59,7 +61,7 @@ const Home = () => {
         
         <Card
           size='middle'
-          type='Baikal' 
+          type='Integlab' 
           title='Легенда Байкала'
           backgroundColor='rgb(243, 243, 243)'   
           backgroundImage='url(./baikal-back.png)' 

@@ -13,7 +13,7 @@ const Navigation = () => {
 
         <div className={style.navigation__contacts}>
           <li>
-            <a href="/projects">
+            <a href="mailto:kisialin@gmail.com" target='_blank'>
               <span className={style.navigation__text}>
                 <Chips>
                   Kisialin@gmail.com
@@ -28,7 +28,7 @@ const Navigation = () => {
           </li>
 
           <li>
-            <a href="/projects">
+            <a href="/projects" target='_blank'>
               <Chips>Резюме</Chips>
             </a>
           </li>

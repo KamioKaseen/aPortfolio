@@ -3,6 +3,11 @@
   src: url('../assets/fonts/Geologica-Light.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'GeologicaExtraLight';
+  src: url('../assets/fonts/Geologica-Thin.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +22,10 @@
 
 body {
   background-color: $bg-black;
+}
+
+button {
+  all: unset;
 }
 
 input,

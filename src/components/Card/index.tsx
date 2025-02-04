@@ -18,8 +18,8 @@ export interface CardProps {
 const Card: FC<CardProps> = ({ type, title, backdrop, image, phoneLarge, className = "", size, backgroundColor, backgroundImage, chipsBlack}) => {
   return (
     <div 
-      className={classNames(styles.card, styles[`card--${size}`], className)}
-      style={{backgroundColor: backgroundColor, backgroundImage: backgroundImage}}
+      className={classNames(styles.card, styles[`card--${size}`], styles[`card--${backgroundColor}`], className)}
+      style={{backgroundImage: backgroundImage}}
     >
       <div 
         className={styles.card__name}

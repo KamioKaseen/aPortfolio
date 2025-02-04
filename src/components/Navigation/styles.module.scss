@@ -10,8 +10,7 @@
     top: 1.6rem;
 
     @media (max-width: 1280px) {
-        height: 4rem;
-        top: 4.5rem;    
+        height: 4rem;   
     } 
     
     &__image {
@@ -42,24 +41,22 @@
         } 
     }
 
-
     &__iconContainer {
         display: none;
         justify-content: center;
         align-items: center;
-        padding: 1.1rem;
+        padding: .9rem;
         border-radius: 50%;
         background-color: $bg-chips;
 
         @media (max-width: 768px) {
-            display: flex; 
-            
-        } 
+            display: block;
+        }
     }
 
     &__icon {
         width: 100%;
-        object-fit: cover;
+        height: 100%;
+        object-fit: cover;  
     }
-
 }

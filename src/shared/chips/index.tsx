@@ -1,7 +1,8 @@
-import { ReactNode } from 'react';  
+import { ReactNode, useState } from 'react';  
 import { FC } from 'react';  
 import styles from './style.module.scss';  
 import classNames from 'classnames';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export interface ChipsProps {  
   children: ReactNode;  
@@ -10,18 +11,28 @@ export interface ChipsProps {
   borderCicle?: boolean;
 }  
 
-const Chips: FC<ChipsProps> = ({ children, className = '', color, borderCicle=false }) => {  
-  return (  
-    <div 
+const Chips: FC<ChipsProps> = ({ children, className = ""}) => {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <motion.button
       className={classNames(styles.chips, className)}
-      style={{
-        color: color,
-        borderRadius: borderCicle ? '50%' : '3.5rem'
-      }}
-    >  
-      {children}  
-    </div>  
-  );  
-};  
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={hovered ? "hover" : "default"}
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: "0%", opacity: 1 }}
+          exit={{ y: "-100%", opacity: 0 }}
+          style={{fontSize: 'inherit'}}
+          transition={{ duration: .2 }}
+        >
+          {children}
+        </motion.span>
+      </AnimatePresence>
+    </motion.button>
+  );
+};
 
 export default Chips;

@@ -1,8 +1,10 @@
 import { FC } from "react";
 import styles from "./style.module.scss";
 import classNames from "classnames";
+import { useNavigate } from "react-router-dom";
 
 export interface CardProps {
+  route: string;
   type: string;
   title?: string;
   backdrop?: string;
@@ -15,11 +17,19 @@ export interface CardProps {
   size: "small" | "middle" | "large";
 }
 
-const Card: FC<CardProps> = ({ type, title, backdrop, image, phoneLarge, className = "", size, backgroundColor, backgroundImage, chipsBlack}) => {
+const Card: FC<CardProps> = ({ route, type, title, backdrop, image, phoneLarge, className = "", size, backgroundColor, backgroundImage, chipsBlack}) => {
+
+  const navigate = useNavigate(); // Получение функции навигации  
+
+  // Функция обработки маршрута  
+  const handleRoute = () => {  
+    navigate(route);
+  }; 
   return (
     <div 
       className={classNames(styles.card, styles[`card--${size}`], styles[`card--${backgroundColor}`], className)}
       style={{backgroundImage: backgroundImage}}
+      onClick={handleRoute}
     >
       <div 
         className={styles.card__name}

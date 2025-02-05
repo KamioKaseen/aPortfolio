@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import Layout from '../components/Layout';
 import Projects from '../pages/Projects';
 import NoiseBackground from '../background';
+import Ony from '../pages/Projects/Ony';
 
 const AppRouter = () => (
     <Router>
@@ -10,7 +11,7 @@ const AppRouter = () => (
             <NoiseBackground />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/ony" element={<Ony />} />
             </Routes>
         </Layout>
     </Router>

@@ -1,20 +1,18 @@
 import styles from './style.module.scss';
 import Card from '../../components/Card';
-import { useRef } from 'react';
+
 
 const Home = () => {
-  const ref = useRef<HTMLDivElement>(null);
-
   return (
-    <div ref={ref} id="home__title" className={styles.home}>
+    <div id="home__title" className={styles.home}>
       <h1 className={styles.home__title}>
         Привет, меня зовут Алина <br/> 
         <span className={styles.home__subtitle}>Я UI/UX дизайнер</span>
       </h1>
 
       <div className={styles.home__grid}>
-        
-        <Card 
+        <Card
+          route='ony' 
           size='middle'
           type='OnyAI' 
           title='Ony – твой психолог'
@@ -25,6 +23,7 @@ const Home = () => {
           className={styles.home__item1}/>
           
         <Card
+          route='knowledge-base'
           size='large'
           type='Orbite' 
           title='Корпоративная база знаний'
@@ -34,6 +33,7 @@ const Home = () => {
           className={styles.home__item2}/>
        
         <Card
+          route='dailyui'
           size='small'
           type='Integlab' 
           backdrop='' 
@@ -43,6 +43,7 @@ const Home = () => {
           className={styles.home__item3}/>
 
         <Card
+          route='issue-tracker'
           size='large'
           type='Orbite' 
           title='Клиентский модуль в трекере задач'
@@ -52,6 +53,7 @@ const Home = () => {
           className={styles.home__item4}/>
 
         <Card
+          route='shop-constructor'
           size='large'
           type='Integlab' 
           title='Конструктор интернет-магазинов'
@@ -60,6 +62,7 @@ const Home = () => {
           className={styles.home__item5}/>
         
         <Card
+          route='baikal'
           size='middle'
           type='Integlab' 
           title='Легенда Байкала'
@@ -69,6 +72,7 @@ const Home = () => {
           className={styles.home__item6}/>
 
         <Card
+          route='form-redesign'
           size='large'
           type='Integlab' 
           title='Редизайн, увеличивший конверсию'
@@ -78,6 +82,7 @@ const Home = () => {
           className={styles.home__item7}/>
         
         <Card
+          route='profile'
           size='small'
           type='Integlab' 
           backgroundImage='url(./profile.png)' 

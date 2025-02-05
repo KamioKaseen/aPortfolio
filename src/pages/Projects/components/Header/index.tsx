@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import styles from './style.module.scss';
 
 export interface HeaderProps {
-  image: string;
+  image?: string;
   backgroundColor?: string;
   backgroundImage?: string;
 }

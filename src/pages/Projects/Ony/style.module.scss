@@ -1,4 +1,5 @@
 .work {
+    z-index: 11;
     display: flex;
     flex-direction: column;
     gap: 5.8rem;
@@ -6,4 +7,5 @@
     padding: 5.8rem;
     border-radius: 5rem;
     background-color: $bg-white;
+    transform: translateY(-3%);
 }

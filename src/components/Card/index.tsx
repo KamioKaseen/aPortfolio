@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./style.module.scss";
 import classNames from "classnames";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export interface CardProps {
   route: string;
@@ -18,18 +18,11 @@ export interface CardProps {
 }
 
 const Card: FC<CardProps> = ({ route, type, title, backdrop, image, phoneLarge, className = "", size, backgroundColor, backgroundImage, chipsBlack}) => {
-
-  const navigate = useNavigate(); // Получение функции навигации  
-
-  // Функция обработки маршрута  
-  const handleRoute = () => {  
-    navigate(route);
-  }; 
   return (
-    <div 
+    <Link 
+      to={route}
       className={classNames(styles.card, styles[`card--${size}`], styles[`card--${backgroundColor}`], className)}
       style={{backgroundImage: backgroundImage}}
-      onClick={handleRoute}
     >
       <div 
         className={styles.card__name}
@@ -42,7 +35,7 @@ const Card: FC<CardProps> = ({ route, type, title, backdrop, image, phoneLarge, 
       {backdrop && <img className={styles[`card--${size}__backdrop`]} src={backdrop} alt="backdrop"/>}
       {phoneLarge && <img className={styles[`card--${size}__phoneLarge`]} src={phoneLarge} alt="phone"/>}
       {image && <img className={styles[`card--${size}__image`]} src={image} alt="image"/>}
-    </div>
+    </Link>
   );
 };
 

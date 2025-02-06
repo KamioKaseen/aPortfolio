@@ -7,7 +7,7 @@ const Navigation = () => {
       <ul className={style.navigation__list}>
         <li>
           <a href="/">
-            <img className={style.navigation__image} src="./photo.svg" alt="Алина Воронкова" />
+            <img className={style.navigation__image} src="Icons/photo.svg" alt="Алина Воронкова" />
           </a>
         </li>
 
@@ -21,7 +21,7 @@ const Navigation = () => {
               </span>
               
               <div className={style.navigation__iconContainer}>
-                <img src='./mail.svg' alt='mail' className={style.navigation__icon} />
+                <img src='Icons/mail.svg' alt='mail' className={style.navigation__icon} />
               </div>
               
             </a>

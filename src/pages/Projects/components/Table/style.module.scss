@@ -2,7 +2,6 @@
     width: 100%;
     padding-bottom: 1rem;
     overflow-x: auto; 
-    cursor: grab;
    
     &__grid {
         display: grid;
@@ -20,10 +19,9 @@
     }
 
     &__item {
-        max-width: 80rem;
+        width: stretch;
         max-height: stretch;
-        // max-width: stretch;
-        padding: 2rem 5rem 2rem 2rem;
+        padding: 1.6rem 5rem 1.6rem 1.6rem;
         border-radius: 1.2rem;
         background-color: $bg-gray;
         font-size: 1.8rem;
@@ -49,6 +47,5 @@
     
     &::-webkit-scrollbar-thumb:hover {  
         background: #555;
-    }  
-    
+    }    
 }

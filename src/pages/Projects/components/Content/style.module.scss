@@ -24,11 +24,11 @@
     }
 
     &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
         padding-right: 10%;
         width: 50%;
-        font-family: "Inter";
-        line-height: 2.7rem;
-        letter-spacing: .1rem;
-        font-size: 1.8rem;
+        
     }
 }

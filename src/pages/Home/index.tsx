@@ -16,20 +16,20 @@ const Home = () => {
           size='middle'
           type='OnyAI' 
           title='Ony – твой психолог'
-          image='./phone.png'
+          image='Ony/phone.png'
           backgroundColor='$backgroundGray' 
-          backgroundImage='url(./mountain.png' 
+          backgroundImage='url(Ony/mountain.png)' 
           chipsBlack={true}
           className={styles.home__item1}/>
           
         <Card
-          route='knowledge-base'
+          route='form-redesign'
           size='large'
-          type='Orbite' 
-          title='Корпоративная база знаний'
-          backdrop='./knowledge-base.png'    
-          phoneLarge='./knowledge-base-phone.png'   
-          backgroundColor='black'    
+          type='Integlab' 
+          title='Редизайн, увеличивший конверсию'
+          backdrop='Form/form.png'        
+          phoneLarge='Form/form-phone.png'
+          backgroundColor='#191722'  
           className={styles.home__item2}/>
        
         <Card
@@ -37,9 +37,9 @@ const Home = () => {
           size='small'
           type='Integlab' 
           backdrop='' 
-          image='./dailyUI.png'     
+          image='DailyUI/dailyUI.png'     
           backgroundColor='black'  
-          backgroundImage='url(./dailyUI-back.png'    
+          backgroundImage='url(DailyUI/dailyUI-back.png)'    
           className={styles.home__item3}/>
 
         <Card
@@ -47,8 +47,8 @@ const Home = () => {
           size='large'
           type='Orbite' 
           title='Клиентский модуль в трекере задач'
-          backdrop='./issue-tracker.png'  
-          phoneLarge='./issue-tracker-phone.png'
+          backdrop='Issue-tracker/issue-tracker.png'  
+          phoneLarge='Issue-tracker/issue-tracker-phone.png'
           backgroundColor='rgba(55, 74, 250, 1)'         
           className={styles.home__item4}/>
 
@@ -57,7 +57,7 @@ const Home = () => {
           size='large'
           type='Integlab' 
           title='Конструктор интернет-магазинов'
-          backdrop='./shop-constructor.png'
+          backdrop='Shop-constructor/shop-constructor.png'
           backgroundColor='rgba(90, 48, 239, 1)'          
           className={styles.home__item5}/>
         
@@ -67,25 +67,25 @@ const Home = () => {
           type='Integlab' 
           title='Легенда Байкала'
           backgroundColor='rgb(243, 243, 243)'   
-          backgroundImage='url(./baikal-back.png)' 
-          image='./botel.png'
+          backgroundImage='url(Baikal/baikal-back.png)' 
+          image='Baikal/botel.png'
           className={styles.home__item6}/>
 
         <Card
-          route='form-redesign'
-          size='large'
-          type='Integlab' 
-          title='Редизайн, увеличивший конверсию'
-          backdrop='./form.png'        
-          phoneLarge='./form-phone.png'
-          backgroundColor='#191722'  
-          className={styles.home__item7}/>
+        route='knowledge-base'
+        size='large'
+        type='Orbite' 
+        title='Корпоративная база знаний'
+        backdrop='Knowledge-base/knowledge-base.png'    
+        phoneLarge='Knowledge-base/knowledge-base-phone.png'   
+        backgroundColor='black'    
+        className={styles.home__item7}/>
         
         <Card
           route='profile'
           size='small'
           type='Integlab' 
-          backgroundImage='url(./profile.png)' 
+          backgroundImage='url(Profile/profile.png)' 
           className={styles.home__item8}/>
       </div>
     </div>

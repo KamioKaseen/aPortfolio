@@ -7,9 +7,11 @@ export interface ImageProps {
 }
 
 const Image: FC<ImageProps> = ({image}) => {
-
   return (
-    <img className={styles.image} src={image} alt="image" />
+    <section className={styles.imageContainer}>
+      <img className={styles.imageContainer__image} src={image} alt="image" />
+    </section>
+    
   );
 };
 

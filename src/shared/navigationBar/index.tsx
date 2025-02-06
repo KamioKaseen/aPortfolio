@@ -15,12 +15,12 @@ const routes = [
   {
     route: "/dailyui",
     name: "DailyUI",
-    image: "Preview/dailyui-preview.png",
+    image: "Preview/form-preview.png",
   },
   {
     route: "/issue-tracker",
     name: "Клиентский модуль в трекере задач",
-    image: "Preview/issue-tracker-preview.png",
+    image: "Preview/form-preview.png",
   },
   {
     route: "/shop-constructor",
@@ -35,7 +35,7 @@ const routes = [
   {
     route: "/knowledge-base",
     name: "Корпоративная база знаний",
-    image: "Preview/knowledge-base-preview.png",
+    image: "Preview/form-preview.png",
   },
   {
     route: "/profile",
@@ -74,14 +74,12 @@ const NavigationBar = () => {
           <img className={styles.navigationBar__svg} src="Icons/left.svg" alt="left" />
         </div>
         <div className={styles.navigationBar__preview}>
-          <p className={styles.navigationBar__title}>{prevRoute.name}</p>
           <img className={styles.navigationBar__img} src={prevRoute.image} alt="preview" />
         </div>
       </button>
 
       <button className={styles.navigationBar__button} onClick={goNext}>
         <div className={styles.navigationBar__preview}>
-          <p className={styles.navigationBar__title}>{nextRoute.name}</p>
           <img className={styles.navigationBar__img} src={nextRoute.image} alt="preview" />
         </div>
         <div className={styles.navigationBar__arrow}>

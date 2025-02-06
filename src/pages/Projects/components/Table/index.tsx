@@ -17,16 +17,6 @@ const Table: FC<TemplateProps> = ({ draggable, firstColumnWidth, itemMaxWidth, l
   const gridRef = useRef<HTMLDivElement>(null);
   const [constraints, setConstraints] = useState({ left: 0, right: 0 });
 
-  const motionProps = {  
-    ref: gridRef,  
-    drag: draggable ? 'x' : false,  
-    dragConstraints: constraints,  
-    dragElastic: 0.2,  
-    dragTransition: { bounceStiffness: 100, bounceDamping: 10 },  
-    whileTap: { cursor: draggable ? "grabbing" : "default"},  
-    whileHover: { cursor: draggable ? "grabbing" : "default"},  
-};  
-
   const tableStyle = {  
     gridTemplateColumns: `repeat(${columns.length}, auto)`, // Для основного стиля  
   };  
@@ -58,7 +48,13 @@ const Table: FC<TemplateProps> = ({ draggable, firstColumnWidth, itemMaxWidth, l
   return (
     <section ref={containerRef} className={styles.gridContainer}>
       <motion.div
-        {...motionProps}
+        ref={gridRef}
+        drag={draggable ? 'x' : false }
+        dragConstraints={constraints} 
+        dragElastic={0.2} 
+        dragTransition={{bounceStiffness: 100, bounceDamping: 10}}  
+        whileTap={{ cursor: draggable ? "grabbing" : "default"}}  
+        whileHover={{ cursor: draggable ? "grabbing" : "default"}}
         className={styles.gridContainer__grid}
         style={firstColumnWidth ? tableCustomStyle : tableStyle}
       >

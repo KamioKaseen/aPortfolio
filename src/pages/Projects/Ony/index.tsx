@@ -1,5 +1,4 @@
-import { FC } from 'react';
-import styles from './style.module.scss';
+import { FC, useEffect, useState } from 'react';
 // import { motion  } from 'framer-motion';
 import Header from '../components/Header';
 import Content from '../components/Content';
@@ -95,6 +94,17 @@ const rowsThree = [
 ];
 
 const ShopConstructor: FC = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <Header 
@@ -107,13 +117,15 @@ const ShopConstructor: FC = () => {
           <p className='description'>Ony создано, чтобы помочь пользователям справляться с тревожностью в повседневной жизни. Приложение обеспечивает быстрый доступ к эффективным методам снятия стресса. Основное внимание уделено анонимности и удобству использования.</p>
         </Content>
         <Image image='Ony/ony-double.png'/>
-        <Table 
+
+        {!isMobile && <Table 
           draggable={true} 
           rows={rowsOne} 
           columns={columnsOne} 
           firstColumnWidth='40rem' 
           lastColumnWidth='100rem'
-        />
+        />}
+        
         <Image image='Ony/ony-breath.png'/>
         <Table 
           draggable={false} 

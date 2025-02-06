@@ -16,19 +16,44 @@
         line-height: 4rem;
         letter-spacing: .1rem;
         color: #797878;
+
+        @media (max-width: 1280px) {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            letter-spacing: .1rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            line-height: 2rem;
+            letter-spacing: .1rem;
+        }
     }
 
     &__item {
         width: stretch;
         max-height: stretch;
-        padding: 1.6rem 5rem 1.6rem 1.6rem;
+        padding: 1.6rem;
         border-radius: 1.2rem;
         background-color: $bg-gray;
         font-size: 1.8rem;
         font-family: "Inter";
         line-height: 4rem;
         letter-spacing: .1rem;
-        overflow: hidden;
+        
+        @media (max-width: 1280px) {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            letter-spacing: .1rem;
+        }
+
+        @media (max-width: 768px) {
+            // width: 30rem;
+            // height: stretch;
+            font-size: 1rem;
+            line-height: 2rem;
+            letter-spacing: .1rem;
+        }
     }
 
     &::-webkit-scrollbar {  

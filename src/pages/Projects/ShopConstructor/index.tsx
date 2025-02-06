@@ -47,31 +47,31 @@ const ShopConstructor: FC = () => {
     
       <main className='work'>
         <Content title='Конструктор инернет-магазинов'>
-          <p style={{fontSize: '1.8rem'}}>Универсальный конструктор сайтов, охватывающий весь спектр необходимых функций 
+          <p className='description'>Универсальный конструктор сайтов, охватывающий весь спектр необходимых функций 
           для e-commerce.  Включает широкий набор блоков, а также предоставляет пользователям возможность настроить визуальные элементы сайта (иконки, кнопки, закругления).</p>
 
-          <p style={{fontSize: '1.8rem', marginTop: '3.2rem', color: 'gray'}}>Пользователи</p>
-          <p style={{fontSize: '1.8rem'}}>Владельцы среднего и малого бизнеса, которые не хотят тратить ресурсы на полноценную разработку</p>
+          <p className='title'>Пользователи</p>
+          <p className='description'>Владельцы среднего и малого бизнеса, которые не хотят тратить ресурсы на полноценную разработку</p>
 
-          <p style={{fontSize: '1.8rem', marginTop: '3.2rem', color: 'gray'}}>Дизайн-система</p>
-          <p style={{fontSize: '1.8rem'}}>Создала полноценную вариативную дизайн-систему</p>
+          <p className='title'>Дизайн-система</p>
+          <p className='description'>Создала полноценную вариативную дизайн-систему</p>
         </Content>
         <Image image='Shop-constructor/constructor-chair.png'/>
         <Table draggable={true} columns={columns} rows={rows} itemMaxWidth='60rem'/>
         <Image image='Shop-constructor/constructor-sales.png'/>
         <Image image='Shop-constructor/constructor-main-сontent.png'/>
         <Content >
-          <p style={{fontSize: '1.8rem', marginTop: '3.2rem', color: 'gray'}}>Пользователи</p>
-          <p style={{fontSize: '1.8rem'}}>Пользователи могут менять цвета, шрифты, размеры кнопок, а также радиус закруглений элементов, чтобы сайт соответствовал их бренду 
+          <p className='title'>Пользователи</p>
+          <p className='description'>Пользователи могут менять цвета, шрифты, размеры кнопок, а также радиус закруглений элементов, чтобы сайт соответствовал их бренду 
           и стилю</p>
         </Content>
         <Image image='Shop-constructor/constructor-color.png'/>
         <Content subTitle='Что можно улучшить?'>
           <ul>
-            <li style={{fontSize: '1.4rem'}}>Расширить аудиторию, предложив больше вариантов креативных блоков для главной страницы и баннеров</li>
-            <li style={{fontSize: '1.4rem'}}>Реализовать интеграцию с дропшиппинг-сервисами для упрощения работы пользователей</li>
-            <li style={{fontSize: '1.4rem'}}>Увеличить выборку участников для интервью</li>
-            <li style={{fontSize: '1.4rem'}}>Разработать мобильный адаптив для оверлея настройки сайта</li>
+            <li className='description'>Расширить аудиторию, предложив больше вариантов креативных блоков для главной страницы и баннеров</li>
+            <li className='description'>Реализовать интеграцию с дропшиппинг-сервисами для упрощения работы пользователей</li>
+            <li className='description'>Увеличить выборку участников для интервью</li>
+            <li className='description'>Разработать мобильный адаптив для оверлея настройки сайта</li>
           </ul>
         </Content>
         <NavigationBar />

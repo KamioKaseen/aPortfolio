@@ -38,9 +38,15 @@ const Home = () => {
           type='Integlab' 
           backdrop='' 
           image='DailyUI/dailyUI.png'     
-          backgroundColor='black'  
           backgroundImage='url(DailyUI/dailyUI-back.png)'    
           className={styles.home__item3}/>
+        <Card
+          route='shop-constructor'
+          size='large'
+          type='Integlab' 
+          title='Конструктор интернет-магазинов'
+          backdrop='Shop-constructor/shop-constructor.png'     
+          className={styles.home__item4}/>
 
         <Card
           route='issue-tracker'
@@ -48,38 +54,26 @@ const Home = () => {
           type='Orbite' 
           title='Клиентский модуль в трекере задач'
           backdrop='Issue-tracker/issue-tracker.png'  
-          phoneLarge='Issue-tracker/issue-tracker-phone.png'
-          backgroundColor='rgba(55, 74, 250, 1)'         
-          className={styles.home__item4}/>
-
-        <Card
-          route='shop-constructor'
-          size='large'
-          type='Integlab' 
-          title='Конструктор интернет-магазинов'
-          backdrop='Shop-constructor/shop-constructor.png'
-          backgroundColor='rgba(90, 48, 239, 1)'          
+          phoneLarge='Issue-tracker/issue-tracker-phone.png'       
           className={styles.home__item5}/>
-        
+
         <Card
           route='baikal'
           size='middle'
           type='Integlab' 
-          title='Легенда Байкала'
-          backgroundColor='rgb(243, 243, 243)'   
+          title='Легенда Байкала'  
           backgroundImage='url(Baikal/baikal-back.png)' 
           image='Baikal/botel.png'
           className={styles.home__item6}/>
 
         <Card
-        route='knowledge-base'
-        size='large'
-        type='Orbite' 
-        title='Корпоративная база знаний'
-        backdrop='Knowledge-base/knowledge-base.png'    
-        phoneLarge='Knowledge-base/knowledge-base-phone.png'   
-        backgroundColor='black'    
-        className={styles.home__item7}/>
+          route='knowledge-base'
+          size='large'
+          type='Orbite' 
+          title='Корпоративная база знаний'
+          backdrop='Knowledge-base/knowledge-base.png'    
+          phoneLarge='Knowledge-base/knowledge-base-phone.png'   
+          className={styles.home__item7}/>  
         
         <Card
           route='profile'

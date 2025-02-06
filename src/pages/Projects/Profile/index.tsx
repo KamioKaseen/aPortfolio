@@ -15,10 +15,10 @@ const ShopConstructor: FC = () => {
         <Content title='Личный кабинет кандидата'>
           <p className='description'>Личный кабинет был создан для кандидатов, которые подают заявки на вакансии компании через сторонние платформы. Основная цель продукта — упростить взаимодействие с работодателем, сделать процесс трудоустройства прозрачным и поддержать кандидатов в стрессовых моментах, таких как выполнение тестовых заданий. Разработка велась на основе пользовательских интервью и включала итеративное тестирование гипотез.</p>
         </Content>
+        <Image image='Profile/profile-team.png'/>
         <Image image='Profile/profile-dashboard.png'/>
         <Image image='Profile/profile-task.png'/>
         <Image image='Profile/profile-uikit.png'/>
-        <Image image='Profile/profile-header.png'/>
         <NavigationBar />
       </main>
     </>

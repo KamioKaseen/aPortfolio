@@ -9,7 +9,7 @@ export interface ImageProps {
 const Image: FC<ImageProps> = ({image}) => {
   return (
     <section className={styles.imageContainer}>
-      <img className={styles.imageContainer__image} src={image} alt="image" />
+      <img width={'1803px'} height={"1032"} className={styles.imageContainer__image} src={image} alt="image" />
     </section>
     
   );

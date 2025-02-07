@@ -123,6 +123,7 @@
     &__backdrop {
         justify-items: flex-end;
         align-self: flex-end;
+        height: 100%;
         width: 90%;
         transform: translateY(10rem);
         object-fit: cover;

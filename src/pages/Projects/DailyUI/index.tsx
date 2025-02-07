@@ -8,10 +8,10 @@ const DailyUI: FC = () => {
  
   return (
     <>
-      <Header image='DailyUI/dailyUI-header.png' />
+      <Header image='DailyUI/dailyUI-header.webp' />
     
       <main className='work'>
-        <Image image='DailyUI/dailyUI-content.png'/>
+        <Image image='DailyUI/dailyUI-content.webp'/>
         <NavigationBar />
       </main>
       

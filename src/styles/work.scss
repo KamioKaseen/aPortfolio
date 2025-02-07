@@ -1,0 +1,69 @@
+@use "colors" as *;
+
+.work {
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    gap: 5.8rem;
+    width: 100%;
+    padding: 5.8rem  5.8rem 11.6rem 5.8rem;
+    border-radius: 5rem;
+    background-color: $bg-white;
+    transform: translateY(-3%);
+  
+    @media (max-width: 1280px) {
+      padding: 3.2rem  3.2rem 10rem 3.2rem;
+      border-radius: 3.2rem;
+      gap: 5rem;
+    }
+  
+    @media (max-width: 768px) {
+      padding: 1.6rem  1.6rem 6rem 1.6rem;
+      border-radius: 2.4rem;
+      gap: 3rem;
+    }
+  
+    @media (max-width: 480px) {
+      padding: 1.6rem  1.6rem 2rem 1.6rem;
+      border-radius: 2.4rem;
+      gap: 1.5rem;
+      transform: translateY(-1%);
+    }
+  }
+  
+  .title {
+    font-family: 'GeologicaLight';
+    font-size: 1.8rem;
+    color: rgba(27, 27, 27, 0.64);
+  }
+  
+  .description {
+    font-family: 'GeologicaLight';
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    
+  }
+  @media (max-width: 1280px) {
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .title {
+      font-size: 1.6rem;
+    }
+  
+    .description {
+      font-size: 1.6rem;
+    }
+  }
+  
+  

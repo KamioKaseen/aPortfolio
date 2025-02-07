@@ -15,7 +15,6 @@
         padding-top: 13rem;
     }
 
-
     &__name {
         z-index: 10;
         position: absolute;
@@ -23,7 +22,7 @@
         left: 3.8rem;
         top: 3.8rem;
         border-radius: 10rem;
-        background-color: $bg-chips;
+        background-color: $bg-card-name;
         color: $font-white;
         font-size: 1.8rem;
         font-family:'GeologicaLight';

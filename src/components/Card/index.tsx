@@ -1,8 +1,10 @@
 import { FC } from "react";
 import styles from "./style.module.scss";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 export interface CardProps {
+  route: string;
   type: string;
   title?: string;
   backdrop?: string;
@@ -15,9 +17,10 @@ export interface CardProps {
   size: "small" | "middle" | "large";
 }
 
-const Card: FC<CardProps> = ({ type, title, backdrop, image, phoneLarge, className = "", size, backgroundColor, backgroundImage, chipsBlack}) => {
+const Card: FC<CardProps> = ({ route, type, title, backdrop, image, phoneLarge, className = "", size, backgroundColor, backgroundImage, chipsBlack}) => {
   return (
-    <div 
+    <Link 
+      to={route}
       className={classNames(styles.card, styles[`card--${size}`], styles[`card--${backgroundColor}`], className)}
       style={{backgroundImage: backgroundImage}}
     >
@@ -32,7 +35,7 @@ const Card: FC<CardProps> = ({ type, title, backdrop, image, phoneLarge, classNa
       {backdrop && <img className={styles[`card--${size}__backdrop`]} src={backdrop} alt="backdrop"/>}
       {phoneLarge && <img className={styles[`card--${size}__phoneLarge`]} src={phoneLarge} alt="phone"/>}
       {image && <img className={styles[`card--${size}__image`]} src={image} alt="image"/>}
-    </div>
+    </Link>
   );
 };
 

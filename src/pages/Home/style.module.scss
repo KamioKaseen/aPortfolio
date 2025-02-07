@@ -125,5 +125,30 @@
             grid-row-start: auto;
             grid-column-start: auto;
         }
+
+        &__item1 {
+            order: 3;
+        }
+        &__item2 {
+            order: 1;
+        }
+        &__item3 {
+            order: 4;
+        }
+        &__item4 {
+            order: 2;
+        }
+        &__item5 {
+            order: 5;
+        }
+        &__item6 {
+            order: 6;
+        }
+        &__item7 {
+            order: 7;
+        }
+        &__item8 {
+            order: 8;
+        }
     }
 }

@@ -7,11 +7,11 @@ const ShopConstructor: FC = () => {
   return (
     <>
       <Header 
-        image='Form/form-header.png'
+        image='Form/form-header.webp'
       />
     
       <main className='work'>
-        <Image image='Form/form-issue.png'/>
+        <Image image='Form/form-issue.webp'/>
         <NavigationBar />
       </main>
     </>

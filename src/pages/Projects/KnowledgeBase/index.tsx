@@ -11,7 +11,7 @@ const IssueTracker: FC = () => {
   return (
     <>
       <Header 
-        image='Shop-constructor/constructor-header.png'
+        image='Shop-constructor/constructor-header.webp'
       />
     
       <main className='work'>

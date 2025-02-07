@@ -1,10 +1,11 @@
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 // import { motion  } from 'framer-motion';
 import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
 import Table from '../components/Table';
 import NavigationBar from '../../../shared/navigationBar';
+import { useBreakpoints } from '../../../utils/use-breackpoints';
 
 const columnsOne = ["Кто", "Возраст", "Описание", "Как выбирают", "Что выбирают", "Почему покупают", "Проблемы и страхи"];   
 const rowsOne = [
@@ -94,21 +95,12 @@ const rowsThree = [
 ];
 
 const ShopConstructor: FC = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
-  
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 480);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const { isDown } = useBreakpoints()
 
   return (
     <>
       <Header 
-        image='Ony/ony-header.png'
+        image='Ony/ony-header.webp'
       />
     
       <main className='work'>
@@ -116,9 +108,9 @@ const ShopConstructor: FC = () => {
           <p className='description'>Концепт мобильного приложения, разработанного для пользователей, которым нужна поддержка в борьбе с тревожностью.</p>
           <p className='description'>Ony создано, чтобы помочь пользователям справляться с тревожностью в повседневной жизни. Приложение обеспечивает быстрый доступ к эффективным методам снятия стресса. Основное внимание уделено анонимности и удобству использования.</p>
         </Content>
-        <Image image='Ony/ony-double.png'/>
+        <Image image='Ony/ony-double.webp'/>
 
-        {!isMobile && <Table 
+        {!isDown('sm') && <Table 
           draggable={true} 
           rows={rowsOne} 
           columns={columnsOne} 
@@ -126,21 +118,21 @@ const ShopConstructor: FC = () => {
           lastColumnWidth='100rem'
         />}
         
-        <Image image='Ony/ony-breath.png'/>
+        <Image image='Ony/ony-breath.webp'/>
         <Table 
           draggable={false} 
           rows={rowsTwo} 
           columns={columnsTwo} 
           itemMaxWidth='61.8rem'
         />
-        <Image image='Ony/ony-children.png'/>
+        <Image image='Ony/ony-children.webp'/>
         <Table 
           draggable={true} 
           rows={rowsThree} 
           columns={columnsThree} 
           itemMaxWidth='55.8rem'
         />
-        <Image image='Ony/ony-shake.png'/>
+        <Image image='Ony/ony-shake.webp'/>
         <NavigationBar />
       </main>
     </>

@@ -5,42 +5,42 @@ const routes = [
   {
     route: "/ony",
     name: "Ony",
-    image: "Preview/ony-preview.png",
+    image: "Preview/ony-preview.webp",
   },
   {
     route: "/form-redesign",
     name: "Редизайн, увеличивший конверсию",
-    image: "Preview/form-preview.png",
+    image: "Preview/form-preview.webp",
   },
   {
     route: "/dailyui",
     name: "DailyUI",
-    image: "Preview/form-preview.png",
+    image: "Preview/form-preview.webp",
   },
   {
     route: "/issue-tracker",
     name: "Клиентский модуль в трекере задач",
-    image: "Preview/form-preview.png",
+    image: "Preview/form-preview.webp",
   },
   {
     route: "/shop-constructor",
     name: "Конструктор интернет-магазинов",
-    image: "Preview/shop-preview.png",
+    image: "Preview/shop-preview.webp",
   },
   {
     route: "/baikal",
     name: "Легенда Байкала",
-    image: "Preview/baikal-preview.png",
+    image: "Preview/baikal-preview.webp",
   },
   {
     route: "/knowledge-base",
     name: "Корпоративная база знаний",
-    image: "Preview/form-preview.png",
+    image: "Preview/form-preview.webp",
   },
   {
     route: "/profile",
     name: "Личный кабинет кандидата",
-    image: "Preview/profile-preview.png",
+    image: "Preview/profile-preview.webp",
   },
 ];
 

@@ -2,26 +2,14 @@ import { FC } from "react";
 import styles from "./style.module.scss";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import { memo } from 'react';
+import { CardData } from "../../types";
 
-export interface CardProps {
-  route: string;
-  type: string;
-  title?: string;
-  backdrop?: string;
-  image?: string;
-  phoneLarge?: string;
-  className?: string;
-  backgroundColor?: string;
-  backgroundImage?: string;
-  chipsBlack?: boolean;
-  size: "small" | "middle" | "large";
-}
-
-const Card: FC<CardProps> = ({ route, type, title, backdrop, image, phoneLarge, className = "", size, backgroundColor, backgroundImage, chipsBlack}) => {
+const Card: FC<CardData> = memo(({ route, type, title, backdrop, image, phoneLarge, className = "", size, backgroundImage, chipsBlack}) => {
   return (
     <Link 
       to={route}
-      className={classNames(styles.card, styles[`card--${size}`], styles[`card--${backgroundColor}`], className)}
+      className={classNames(styles.card, styles[`card--${size}`], className)}
       style={{backgroundImage: backgroundImage}}
     >
       <div 
@@ -37,7 +25,7 @@ const Card: FC<CardProps> = ({ route, type, title, backdrop, image, phoneLarge, 
       {image && <img className={styles[`card--${size}__image`]} src={image} alt="image"/>}
     </Link>
   );
-};
+});
 
 export default Card;
 

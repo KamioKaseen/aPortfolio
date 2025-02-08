@@ -1,16 +1,19 @@
 @font-face {
   font-family: 'GeologicaLight';
   src: url('../assets/fonts/Geologica-Light.woff2') format('woff2');
+  font-display: swap; 
 }
 
 @font-face {
   font-family: 'GeologicaExtraLight';
   src: url('../assets/fonts/Geologica-Thin.woff2') format('woff2');
+  font-display: swap; 
 }
 
 @font-face {
   font-family: 'Inter';
   src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-display: swap; 
 }
 
 ::-webkit-scrollbar {  
@@ -56,12 +59,6 @@ textarea {
 img {
   max-width: 100%;
 }
-
-ul {
-  text-decoration: none;
-  list-style: none;
-}
-
 
 a {
   text-decoration: none;

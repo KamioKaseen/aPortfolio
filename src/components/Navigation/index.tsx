@@ -5,16 +5,13 @@ import { useLocation } from 'react-router-dom';
 // import classNames from 'classnames';
 
 const Navigation = () => {
-
   const {pathname} = useLocation();
-
-  console.log(pathname);
 
   return (
     <nav className={style.navigation}>
       <ul className={style.navigation__list}>
         <li>
-          <a href="/">
+          <a href="#/">
             {pathname != '/' ?
               <button className={style.navigation__backContainer}>
               <LeftIcon className={style.navigation__back}/>

@@ -42,7 +42,7 @@ const ShopConstructor: FC = () => {
   return (
     <>
       <Header 
-        image='Shop-constructor/constructor-header.png'
+        image='Shop-constructor/constructor-header.webp'
       />
     
       <main className='work'>
@@ -56,16 +56,16 @@ const ShopConstructor: FC = () => {
           <p className='title'>Дизайн-система</p>
           <p className='description'>Создала полноценную вариативную дизайн-систему</p>
         </Content>
-        <Image image='Shop-constructor/constructor-chair.png'/>
+        <Image image='Shop-constructor/constructor-chair.webp'/>
         <Table draggable={true} columns={columns} rows={rows} itemMaxWidth='60rem'/>
-        <Image image='Shop-constructor/constructor-sales.png'/>
-        <Image image='Shop-constructor/constructor-main-сontent.png'/>
+        <Image image='Shop-constructor/constructor-sales.webp'/>
+        <Image image='Shop-constructor/constructor-main-сontent.webp'/>
         <Content >
           <p className='title'>Пользователи</p>
           <p className='description'>Пользователи могут менять цвета, шрифты, размеры кнопок, а также радиус закруглений элементов, чтобы сайт соответствовал их бренду 
           и стилю</p>
         </Content>
-        <Image image='Shop-constructor/constructor-color.png'/>
+        <Image image='Shop-constructor/constructor-color.webp'/>
         <Content subTitle='Что можно улучшить?'>
           <ul>
             <li className='description'>Расширить аудиторию, предложив больше вариантов креативных блоков для главной страницы и баннеров</li>

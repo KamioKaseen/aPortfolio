@@ -1,4 +1,6 @@
 .content {
+    width: 100%;
+    height: 100%;
     display: flex;
     gap: 2rem;
     width: 100%;
@@ -7,7 +9,7 @@
         flex-direction: column;
     }
 
-    &__titleContainer {
+    &__header {
         width: 50%;
     }
 
@@ -23,9 +25,9 @@
             font-size: 4rem;
         }
         
-        //   @media (max-width: 768px) {
-        //     font-size: 2rem;
-        //   }
+          @media (max-width: 768px) {
+            font-size: 2rem;
+          }
     }
 
     &__subTitle {
@@ -34,10 +36,10 @@
         font-family: "GeologicaLight";
     }
 
-    &__description {
+    &__body {
         display: flex;
         flex-direction: column;
-        gap: .8rem;
+        gap: 3.2rem;
         padding-right: 10%;
         width: 50%;
 
@@ -45,5 +47,59 @@
             width: 100%;
             padding-right: 0;
         }
+    }
+
+    &__text {
+        font-family: 'GeologicaLight';
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 3rem;
+        letter-spacing: .1rem;
+    }
+
+    &__listTitle {
+        font-family: 'GeologicaLight';
+        font-size: 1.8rem;
+        color: rgba(27, 27, 27, 0.64);
+        padding-bottom: .8rem;
+    }
+
+    &__list {
+        list-style-type: disc;
+        list-style-position: inside;
+        
+        li {
+          font-family: 'GeologicaLight';
+          font-size: 1.8rem;
+          font-weight: 300;
+          line-height: 3rem;
+          letter-spacing: .1rem;
+        }
+    }
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+      
+    &__title {
+        font-family: 'GeologicaLight';
+        font-size: 1.8rem;
+        color: rgba(27, 27, 27, 0.64);
+    }
+
+    &__text {
+      font-family: 'GeologicaLight';
+      font-size: 1.8rem;
+      font-weight: 300;
+      line-height: 3rem;
+      letter-spacing: .1rem;
     }
 }

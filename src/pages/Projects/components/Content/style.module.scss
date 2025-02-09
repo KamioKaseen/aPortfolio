@@ -5,17 +5,23 @@
     gap: 2rem;
     width: 100%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         flex-direction: column;
+        gap: 2.4rem;
     }
 
     &__header {
         width: 50%;
+        padding-left: 10%;
+
+        @media (max-width: 992px) {
+            width: 100%;
+            padding-left: 0;
+        }
     }
 
     &__title {
         display: block;
-        width: 70%;
         font-size: 5.6rem;
         font-weight: 600;
         font-family: "GeologicaLight";
@@ -27,6 +33,7 @@
         
           @media (max-width: 768px) {
             font-size: 2rem;
+            width: 100%;
           }
     }
 
@@ -40,17 +47,17 @@
         display: flex;
         flex-direction: column;
         gap: 3.2rem;
-        padding-right: 10%;
         width: 50%;
+        max-width: 72rem;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             width: 100%;
             padding-right: 0;
         }
     }
 
     &__text {
-        font-family: 'GeologicaLight';
+        font-family: 'Inter';
         font-size: 1.8rem;
         font-weight: 300;
         line-height: 3rem;
@@ -58,18 +65,21 @@
     }
 
     &__listTitle {
-        font-family: 'GeologicaLight';
+        font-family: 'Inter';
         font-size: 1.8rem;
         color: rgba(27, 27, 27, 0.64);
         padding-bottom: .8rem;
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
         list-style-type: disc;
         list-style-position: inside;
         
         li {
-          font-family: 'GeologicaLight';
+          font-family: 'Inter';
           font-size: 1.8rem;
           font-weight: 300;
           line-height: 3rem;
@@ -90,13 +100,13 @@
     }
       
     &__title {
-        font-family: 'GeologicaLight';
+        font-family: 'Inter';
         font-size: 1.8rem;
         color: rgba(27, 27, 27, 0.64);
     }
 
     &__text {
-      font-family: 'GeologicaLight';
+      font-family: 'Inter';
       font-size: 1.8rem;
       font-weight: 300;
       line-height: 3rem;

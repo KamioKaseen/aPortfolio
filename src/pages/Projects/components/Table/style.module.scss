@@ -2,7 +2,12 @@
     width: 100%;
     padding-bottom: 1rem;
     overflow-x: auto; 
+    // margin-left: 6%;
     // transform: translateX(19rem);
+
+    @media (max-width: 768) {
+        
+    }
    
     &__grid {
         display: grid;
@@ -32,11 +37,11 @@
     }
 
     &__item {
-        width: stretch;
+        max-width: 104rem;
         max-height: stretch;
         padding: 1.6rem;
         border-radius: 1.2rem;
-        background-color: $bg-gray;
+        background-color: rgba(220, 211, 235, 0.32);
         font-size: 1.8rem;
         font-family: "Inter";
         line-height: 4rem;

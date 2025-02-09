@@ -37,7 +37,7 @@ const Navigation = () => {
           </li>
 
           <li>
-            <a href="/projects" target='_blank'>
+            <a href="https://drive.google.com/file/d/1SuNP2SE_l5Ks4G76O0Ra-Wo_VHuF0IB0/view" target='_blank'>
               <Chips>Резюме</Chips>
             </a>
           </li>

@@ -4,11 +4,12 @@ import Navigation from '../Navigation';
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div>
+    <>
+      <div id="modal-root" />
       <Navigation />
         <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 

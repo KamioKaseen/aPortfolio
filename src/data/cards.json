@@ -36,6 +36,7 @@
   },  
   {  
     "route": "issue-tracker",  
+    "isNDA": true,
     "size": "large",  
     "type": "Orbite",  
     "title": "Клиентский модуль в трекере задач",  
@@ -54,6 +55,7 @@
   },  
   {  
     "route": "knowledge-base",  
+    "isNDA": true,
     "size": "large",  
     "type": "Orbite",  
     "title": "Корпоративная база знаний",  

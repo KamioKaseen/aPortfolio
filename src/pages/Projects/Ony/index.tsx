@@ -27,6 +27,8 @@ const ShopConstructor: FC = () => {
     >
       <Header 
         image='Ony/ony-header.webp'
+        backgroundImage='Ony/ony-header.webp'
+        // backgroundColor='Ony/ony-header.webp'
       />
 
       <main className='work'>

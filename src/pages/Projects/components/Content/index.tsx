@@ -29,8 +29,8 @@ const Content: FC<ContentProps> = ({
       <div className={styles.content__body}> 
         {bodyText && 
           <div>
-            {bodyText.map((text) => {
-            return <p className={styles.content__text}>{text}</p>
+            {bodyText.map((text, index) => {
+            return <p key={index} className={styles.content__text}>{text}</p>
           })}
           </div>
         }

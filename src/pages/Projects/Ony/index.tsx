@@ -27,7 +27,8 @@ const ShopConstructor: FC = () => {
     >
       <Header 
         image='Ony/ony-header.webp'
-        backgroundImage='Ony/ony-header.webp'
+        mobileImage='Ony/phone.webp'
+        backgroundImage='url(Ony/mountain.webp)'
         // backgroundColor='Ony/ony-header.webp'
       />
 
@@ -76,7 +77,7 @@ const ShopConstructor: FC = () => {
           draggable={false} 
           rows={tables.tableTwo.rows} 
           columns={tables.tableTwo.columns} 
-          itemMaxWidth='70rem'
+          itemMaxWidth='52rem'
         />
         <Content 
           bodyText={[
@@ -99,7 +100,7 @@ const ShopConstructor: FC = () => {
           draggable={true} 
           rows={tables.tableThree.rows} 
           columns={tables.tableThree.columns}  
-          itemMaxWidth='55.8rem'
+          itemMaxWidth='52rem'
         />
 
         <Image image='Ony/ony-shake.webp'/>

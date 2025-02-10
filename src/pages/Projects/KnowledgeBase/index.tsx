@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
 // import { motion  } from 'framer-motion';
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import NavigationBar from '../../../shared/navigationBar';
 
 const IssueTracker: FC = () => {
@@ -10,10 +10,10 @@ const IssueTracker: FC = () => {
 
   return (
     <>
-      <Header 
+      {/* <Header 
         image='Shop-constructor/constructor-header.webp'
       />
-    
+     */}
       <main className='work'>
         <NavigationBar />
       </main>

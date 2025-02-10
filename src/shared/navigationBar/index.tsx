@@ -17,11 +17,11 @@ const routes = [
     name: "DailyUI",
     image: "Preview/form-preview.webp",
   },
-  {
-    route: "/issue-tracker",
-    name: "Клиентский модуль в трекере задач",
-    image: "Preview/form-preview.webp",
-  },
+  // {
+  //   route: "/issue-tracker",
+  //   name: "Клиентский модуль в трекере задач",
+  //   image: "Preview/form-preview.webp",
+  // },
   {
     route: "/shop-constructor",
     name: "Конструктор интернет-магазинов",
@@ -32,11 +32,11 @@ const routes = [
     name: "Легенда Байкала",
     image: "Preview/baikal-preview.webp",
   },
-  {
-    route: "/knowledge-base",
-    name: "Корпоративная база знаний",
-    image: "Preview/form-preview.webp",
-  },
+  // {
+  //   route: "/knowledge-base",
+  //   name: "Корпоративная база знаний",
+  //   image: "Preview/form-preview.webp",
+  // },
   {
     route: "/profile",
     name: "Личный кабинет кандидата",

@@ -38,16 +38,18 @@
   font-size: 62.5%;
 }
 
-.interactive {
-  pointer-events: all;
-}
+// .interactive {
+//   pointer-events: all;
+// }
 
 body {
   background-color: $bg-black;
 }
 
 button {
-  all: unset;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 input,

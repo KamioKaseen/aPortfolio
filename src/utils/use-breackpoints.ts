@@ -4,12 +4,14 @@ interface UseBreakpoints {
   sm: number;
   md: number;
   lg: number;
+  xl: number;
 }
 
 const breakpoints: UseBreakpoints = {
   sm: 480,
   md: 768,
-  lg: 1280,
+  lg: 992,
+  xl: 1280,
 };
 
 export function useBreakpoints() {

@@ -1,10 +1,8 @@
-import { useMemo } from 'react';
 import styles from './style.module.scss';
 import { CardData } from '../../types';
 import cardDataRaw from '../../data/cards.json';
 import Card from '../../components/Card';
 import { motion } from 'framer-motion';
-// const LazyCard = React.lazy(() => import('../../components/Card'));
 
 const cardData: CardData[] = cardDataRaw as CardData[];
 
@@ -15,13 +13,11 @@ const pageVariants = {
 };
 
 const Home = () => {
-  const cards: CardData[] = useMemo(() => {
-    return cardData.map((card, index) => ({
+  const cards: CardData[] = cardData.map((card, index) => ({
       ...card,
       className: styles[`home__item${index + 1}`],
     }));
-  }, []);
-
+  
   return (
     <motion.div 
       initial="initial" 

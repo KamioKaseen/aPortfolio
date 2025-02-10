@@ -2,6 +2,7 @@ type CardSize = 'small' | 'middle' | 'large';
 
 export interface CardData {
   route: string;
+  isNDA?: boolean;
   size: CardSize;
   type: string;
   title?: string;

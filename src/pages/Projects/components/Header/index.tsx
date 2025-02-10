@@ -4,12 +4,17 @@ import styles from './style.module.scss';
 
 export interface HeaderProps {
   image?: string;
+  backgroundImage?: string;
+  backgroundColor?: string;
 }
 
-const Header: FC<HeaderProps> = ({ image }) => {
+const Header: FC<HeaderProps> = ({ image, backgroundImage, backgroundColor }) => {
 
   return (
-    <header className={classNames(styles.header)}>
+    <header 
+      className={classNames(styles.header, backgroundColor)}
+      style={{backgroundImage}}
+    >
       <img className={styles.header__image} src={image} alt="header-img" />
     </header>
   );

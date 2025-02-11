@@ -8,7 +8,9 @@ const DailyUI: FC = () => {
  
   return (
     <>
-      <Header image='DailyUI/dailyUI-header.webp' />
+      <Header 
+        backgroundImage='url(DailyUI/dailyUI-header.webp)'
+      />
     
       <main className='work'>
         <Image image='DailyUI/dailyUI-content.webp'/>

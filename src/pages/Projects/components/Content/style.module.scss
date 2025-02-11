@@ -12,7 +12,6 @@
 
     &__header {
         width: 50%;
-        // padding-left: 5%;
 
         @media (max-width: 992px) {
             width: 100%;
@@ -24,6 +23,7 @@
         display: block;
         font-size: 5.6rem;
         font-weight: 600;
+        width: 90%;
         font-family: "GeologicaLight";
         transform: translateY(-10%);
 
@@ -32,6 +32,7 @@
         }
         
           @media (max-width: 768px) {
+            width: 100%;
             font-size: 3rem;
             width: 100%;
           }
@@ -77,15 +78,16 @@
         font-weight: 300;
         letter-spacing: 1px;
         padding-bottom: 2.4rem;
+        color: rgba(27, 27, 27, 0.64);
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
-        margin-left: 1.3rem;
+        margin-left: 3rem;
         list-style-type: disc;
-        list-style-position: inside;
+        
     }
 
     &__listItem {
@@ -105,7 +107,7 @@
 
     
     &__title {
-        font-family: 'GeologicaLight';
+        font-family: 'Inter';
         font-size: 1.8rem;
         color: rgba(27, 27, 27, 0.64);
         font-size: 1.8rem;

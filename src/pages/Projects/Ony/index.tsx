@@ -27,7 +27,6 @@ const ShopConstructor: FC = () => {
     >
       <Header 
         image='Ony/ony-header.webp'
-        mobileImage='Ony/phone.webp'
         backgroundImage='url(Ony/mountain.webp)'
       />
 

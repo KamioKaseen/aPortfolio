@@ -15,7 +15,7 @@ const routes = [
   {
     route: "/dailyui",
     name: "DailyUI",
-    image: "Preview/form-preview.webp",
+    image: "Preview/daily-preview.webp",
   },
   // {
   //   route: "/issue-tracker",
@@ -47,6 +47,7 @@ const routes = [
 const NavigationBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  
   // Ищем индекс текущего маршрута; если не найден – берём 0
   const currentIndex = routes.findIndex(route => route.route === location.pathname);
   const index = currentIndex === -1 ? 0 : currentIndex;

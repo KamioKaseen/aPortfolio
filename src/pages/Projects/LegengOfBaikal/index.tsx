@@ -11,7 +11,7 @@ const KnowledgeBase: FC = () => {
   return (
     <>
       <Header 
-        image='Baikal/baikal-header.webp' 
+        image='Baikal/baikal-header1.webp' 
         backgroundImage='url(Baikal/baikal-back.webp)' 
       />
     

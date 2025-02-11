@@ -25,7 +25,7 @@
         font-size: 5.6rem;
         font-weight: 600;
         font-family: "GeologicaLight";
-        transform: translateY(-4%);
+        transform: translateY(-10%);
 
         @media (max-width: 1280px) {
             font-size: 4rem;
@@ -56,6 +56,12 @@
         }
     }
 
+    &__bodyСontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
     &__text {
         font-family: 'Inter';
         font-size: 1.8rem;
@@ -67,49 +73,43 @@
     &__listTitle {
         font-family: 'Inter';
         font-size: 1.8rem;
-        color: rgba(27, 27, 27, 0.64);
-        padding-bottom: .8rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        padding-bottom: 2.4rem;
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
+        margin-left: 1.3rem;
         list-style-type: disc;
         list-style-position: inside;
-        
-        li {
-          font-family: 'Inter';
-          font-size: 1.8rem;
-          font-weight: 300;
-          line-height: 3rem;
-          letter-spacing: .1rem;
-        }
+    }
+
+    &__listItem {
+        font-family: 'Inter';
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 3rem;
+        letter-spacing: .1rem;
     }
 }
 
 .group {
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: .8rem;
+    font-family: 'Inter';
+
     
-    &__item {
-        display: flex;
-        flex-direction: column;
-        gap: .8rem;
-    }
-      
     &__title {
-        font-family: 'Inter';
+        font-family: 'GeologicaLight';
         font-size: 1.8rem;
         color: rgba(27, 27, 27, 0.64);
-    }
-
-    &__text {
-      font-family: 'Inter';
-      font-size: 1.8rem;
-      font-weight: 300;
-      line-height: 3rem;
-      letter-spacing: .1rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: 1px;
     }
 }

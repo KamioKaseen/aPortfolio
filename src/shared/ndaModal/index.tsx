@@ -15,8 +15,8 @@ interface ModalProps {
 
 const dropIn = {
   hidden: { x: "100%" },
-  visible: { x: 0, transition: { duration: 0.3, type: "spring"  }, },
-  exit: { x: "100%", transition: { duration: 0.3, type: "spring"  }, },
+  visible: { x: 0, transition: { duration: 0.3  }, },
+  exit: { x: "100%", transition: { duration: 0.3 }, },
 };
 
 const mobileDropIn = {
@@ -26,7 +26,7 @@ const mobileDropIn = {
 };
 
 const errorAnim = {  
-  hidden: { opacity: 0, y: -20 },
+  hidden: { opacity: 1, y: -20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.3 , type: "spring" } }, 
   exit: { opacity: 0, y: -20, transition: { duration: 0.3, type: "spring" } },   
 };  

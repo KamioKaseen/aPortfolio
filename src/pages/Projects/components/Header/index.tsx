@@ -14,7 +14,7 @@ const Header: FC<HeaderProps> = ({ image, mobileImage, backgroundImage, backgrou
   return (
     <header 
       className={classNames(styles.header, backgroundColor)}
-      style={{backgroundImage}}
+      style={{backgroundImage: backgroundImage}}
 
     >
       <picture className={styles.header__picture}>  

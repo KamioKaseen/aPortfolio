@@ -1,18 +1,17 @@
-import { FC } from 'react';
 // import { motion  } from 'framer-motion';
 import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
-import NavigationBar from '../../../shared/navigationBar';
+import NavigationBar from '../../../shared/navigationRouting';
 
-const ShopConstructor: FC = () => {
- 
+const ShopConstructor = () => {
   return (
     <>
       <Header backgroundImage='url(Profile/profile-header.webp)'/>
     
       <main className='work'>
         <Content 
+          id='#about'
           title='Личный кабинет кандидата'
           bodyText={[
             {text: 'Студия прошла этап ребрендинга и активно искала новых талантливых специалистов. Моей задачей было разработать личный кабинет для кандидатов, которые подают заявки на вакансии компании через сторонние платформы или сайт студии.'},
@@ -21,6 +20,7 @@ const ShopConstructor: FC = () => {
           ]}
         />
         <Content 
+          id='#task'
           subTitle='Задача'
           bodyText={[
             {textItem: 'Упростить взаимодействие между кандидатами и работодателем.'},
@@ -28,6 +28,7 @@ const ShopConstructor: FC = () => {
           ]}
         />
         <Content 
+          id='#hypothesesSolutions'
           subTitle='Гипотезы и решения'
           bodyText={[
            {title: 'Гипотеза', text: 'Если показать потенциальному кандидату список будущих коллег с ссылками на их соцсети, это повысит NPS и конверсию принятия оффера.'},
@@ -42,6 +43,7 @@ const ShopConstructor: FC = () => {
         <Image image='Profile/who.png'/>
         <Image image='Profile/profile-tasks.webp'/>
         <Content 
+          id='#result'
           subTitle='Результаты'
           bodyText={[
             {title: 'Разработала интерфейс личного кабинета, который позволяет:'},

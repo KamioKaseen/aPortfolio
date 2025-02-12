@@ -44,7 +44,7 @@ const routes = [
   },
 ];
 
-const NavigationBar = () => {
+const NavigationRouting = () => {
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -91,4 +91,4 @@ const NavigationBar = () => {
   );
 };
 
-export default NavigationBar;
+export default NavigationRouting;

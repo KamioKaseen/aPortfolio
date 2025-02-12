@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Header from '../components/Header';
 import Image from '../components/Image';
-import NavigationBar from '../../../shared/navigationBar';
+import NavigationBar from '../../../shared/navigationRouting';
 import Content from '../components/Content';
 
 const ShopConstructor: FC = () => {
@@ -13,6 +13,7 @@ const ShopConstructor: FC = () => {
     
       <main className='work'>
         <Content 
+          id='#about'
           title='Редизайн, увеличивший конверсию'
           bodyText={[
             {text: 'Integlab — это студия разработки (ранее dlc-master), которая специализируется на e-commerce и корпоративных решениях.'},
@@ -24,13 +25,15 @@ const ShopConstructor: FC = () => {
           ]}
         />
         <Content 
+          id='#task'
           subTitle='Задача'
           listItems={[
             'Повысть конверсию заявок с сайта.',
             ' Один из продуктов студии — маркетплейс решений для Битрикс24 и 1С, включая их лицензии. Моей задачей было увеличение CTR по карточкам товаров в этом маркетплейсе.',
           ]}
         />
-        <Content 
+        <Content
+          id='#analysis'
           subTitle='Анализ'
           bodyText={[{text: 'Для начала я посмотрела на то, что мы уже имеем на ключевых страницах студии и выписать то, что мне понравилось и не понравилось.'}]}
         />
@@ -52,12 +55,14 @@ const ShopConstructor: FC = () => {
           ]}
         />    
         <Content 
+          id='#benchmarking'
           subTitle='Бенчамаркинг'
           bodyText={[
             {text: 'Я провела анализ известных конкурентов, в числе которых были: Ony, Tubik, Студия Лебедева, Only, Magma, Crauch, Луч.'},
             {text: 'Моей целью было понять как выглядит их презентация студии и почему она работает.'}]}
         />
         <Content 
+          id='#hypothesesSolutions'
           subTitle='Гипотезы и решения'
           bodyText={[
             {title: 'Гипотеза', text: 'Если сделаем акцент на сочных изображениях проекта, повысим количество кликов на проекты и количетсво заявок в форме обратной связи.'}
@@ -85,6 +90,7 @@ const ShopConstructor: FC = () => {
             {text: 'Я создала свою версию флоу формы, провела коридорное тестирование и презентовала его результаты стейкхолдерам. Это помогло убедить их в необходимости изменений и стало подтверждением моей гипотезы.'}]}
         />
         <Content 
+          id='#result'
           subTitle='Результат'
           listTitle='Итоговое решение'
           listItems={[

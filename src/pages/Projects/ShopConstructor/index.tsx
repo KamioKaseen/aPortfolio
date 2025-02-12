@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
 import Table from '../components/Table';
-import NavigationBar from '../../../shared/navigationBar';
+import NavigationBar from '../../../shared/navigationRouting';
 
 const ShopConstructor: FC = () => {
  
@@ -18,6 +18,7 @@ const ShopConstructor: FC = () => {
     
       <main className='work'>
         <Content
+          id='#about'
           title='Конструктор интернет-магазинов'
           bodyText={[
             {text: 'Конструктор сайтов, предназначенный для создания интернет-магазина.'},
@@ -29,6 +30,7 @@ const ShopConstructor: FC = () => {
 
         <Image image='Shop-constructor/constructor-content.webp'/>
         <Content
+          id='#task'
           subTitle='Задача'
           listItems={[
             'Разработать интерфейс, который позволяет даже новичкам легко создавать и настраивать сайты',
@@ -37,6 +39,7 @@ const ShopConstructor: FC = () => {
           ]}
         />
         <Content
+          id='#benchmarking'
           subTitle='Бенчмаркинг'
           bodyText={[
             {text: 'Мы изучили существующие решения на рынке, такие как Wix, Tilda и Shopify.'},
@@ -46,6 +49,7 @@ const ShopConstructor: FC = () => {
           ]}
         />
         <Content
+          id='#analysis'
           subTitle='Анализ'
           bodyText={[{text: 'На основе проведенного конкурентного анализа я разработала сегментацию пользователей для сервиса, опираясь на ключевые болевые точки и потребности аудитории'}]}
         />
@@ -56,6 +60,7 @@ const ShopConstructor: FC = () => {
           itemMaxWidth={'50rem'}
         />
         <Content
+          id='#solutions'
           subTitle='Решения'
           bodyText={[{text: 'Поскольку проект был экспериментальным для студии, мы приняли решение сосредоточиться на разработке продукта для одного целевого сегмента на этапе MVP — представителей малого и среднего бизнеса'}]}
         />
@@ -70,6 +75,7 @@ const ShopConstructor: FC = () => {
 
         <Image image='Shop-constructor/constructor-color.webp'/>
         <Content
+          id='#result'
           subTitle='Результат'
           bodyText={[
             {

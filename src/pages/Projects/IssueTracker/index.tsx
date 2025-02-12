@@ -1,7 +1,7 @@
 import { FC, useEffect } from 'react';
 // import { motion  } from 'framer-motion';
 // import Header from '../components/Header';
-import NavigationBar from '../../../shared/navigationBar';
+import NavigationBar from '../../../shared/navigationRouting';
 
 const IssueTracker: FC = () => {
   useEffect(() => {  

@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
 import Table from '../components/Table';
-import NavigationBar from '../../../shared/navigationBar';
+import NavigationBar from '../../../shared/navigationRouting';
 import { useBreakpoints } from '../../../utils/use-breackpoints';
 import { motion } from 'framer-motion';
 import tables from '../../../data/tableOny.json';
@@ -32,6 +32,7 @@ const ShopConstructor: FC = () => {
 
       <main className='work'>
         <Content 
+          id='#about'
           title='Ony'
           bodyText={[
             {text: 'Стартап, разрабатывающий персонализированного ИИ помощника в области психологического здоровья.'},
@@ -50,6 +51,7 @@ const ShopConstructor: FC = () => {
           
         <Image image='Ony/ony-double.webp'/>
         <Content 
+          id='#searchAnalysis'
           subTitle='Исследование и анализ'
           bodyText={[
             {text: 'На основе данных, собранных в ходе нескольких проблемных интервью, я определила основные сегменты пользователей а также анализа аудитории конкурентов.'},
@@ -71,6 +73,7 @@ const ShopConstructor: FC = () => {
 
         <Image image='Ony/ony-breath.webp'/>
         <Content 
+          id='#jobStories'
           subTitle='Job Stories'
         />
         <Table 
@@ -92,6 +95,7 @@ const ShopConstructor: FC = () => {
 
         <Image image='Ony/ony-children.webp'/>
         <Content 
+          id='#cjm'
           subTitle='CJM'
           bodyText={[
             {text: 'Для оценки взаимодействия с приложением использовались AARRR-метрики:'}]}
@@ -105,6 +109,7 @@ const ShopConstructor: FC = () => {
 
         <Image image='Ony/ony-shake.webp'/>
         <Content 
+          id='#whatcanbe'
           subTitle='Что можно улучишть'
           listItems={[
             'Расширить функциональность за счёт интеграции с умными часами.', 

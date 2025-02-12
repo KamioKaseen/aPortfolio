@@ -14,3 +14,14 @@ export interface CardData {
   className: string;
 }
 
+interface NavigationItem {  
+  id: string;
+  label: string;
+}  
+
+interface ProjectNavigation {  
+  [projectName: string]: NavigationItem[]; 
+}  
+
+export type NavigationData = ProjectNavigation[];  
+

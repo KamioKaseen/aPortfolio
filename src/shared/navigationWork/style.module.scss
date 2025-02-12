@@ -1,0 +1,84 @@
+.navigation {
+    z-index: 1111;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: fit-content;
+
+    @media (max-width: 768px) {
+        left: 50%;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    &__openButton {
+        padding: 1.4rem;
+        background-color: rgba(220, 211, 235, .7);
+        border-radius: 2.4rem;
+        font-family: 'GeologicaExtraLight';
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 3rem;
+        letter-spacing: .1rem;  
+    }
+
+    &__links {
+        padding: 1.2rem 3.6rem;
+        display: flex;
+        justify-content: center;
+        gap: 3.6rem;
+        border-radius: 5.6rem;
+        background-color: rgba(220, 211, 235, .7);
+        color: $font-black; 
+
+        @media (max-width: 1280px) {
+            gap: 1.8rem;
+        }
+
+        @media (max-width: 768px) {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 2.4rem;
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        font-family: 'GeologicaExtraLight';
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 3rem;
+        letter-spacing: .1rem;
+        text-wrap: nowrap;
+
+        &:hover {
+            color: #636363;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1280px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            color: $font-white; 
+            font-size: 1.9rem;
+        }
+    }
+
+    &__siteLink {
+        padding: 1.2rem 3.6rem;
+        background-color: $bg-black;
+        border-radius: 5.6rem;
+        color: $font-white;
+
+        &:hover {
+            background-color: #E6E6E6;
+            color: $font-black;
+            cursor: pointer;
+        }
+    }
+}

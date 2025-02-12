@@ -5,19 +5,6 @@ import Footer from '../Footer';
 import Navigation from '../Navigation';
 import NavigationWork from '../../shared/navigationWork';
 
-interface NavigationItem {  
-  id: string;
-  label: string;
-}  
-
-interface ProjectNavigation {  
-  [projectName: string]: NavigationItem[]; 
-}  
-
-export type NavigationData = ProjectNavigation[];  
-
-
-
 const Layout = ({ children }: { children: ReactNode }) => {  
   const { pathname } = useLocation();  
 
@@ -28,7 +15,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <>
         {children}
       </>  
-      {pathname !== '/' && <NavigationWork navigationItems={NAV_ITEMS as NavigationData} />}
+      {pathname !== '/' && <NavigationWork navigationItems={NAV_ITEMS} />}
       <Footer />  
     </>  
   );  

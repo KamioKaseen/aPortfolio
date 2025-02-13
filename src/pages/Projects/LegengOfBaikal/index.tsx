@@ -1,22 +1,20 @@
-import { FC } from 'react';
 // import { motion  } from 'framer-motion';
 import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
-import NavigationBar from '../../../shared/navigationBar';
+import NavigationBar from '../../../shared/navigationRouting';
 
-
-const KnowledgeBase: FC = () => {
- 
+const KnowledgeBase = () => {
   return (
     <>
       <Header 
-        image='Baikal/baikal-header1.webp' 
+        image='Baikal/baikal-header.webp' 
         backgroundImage='url(Baikal/baikal-back.webp)' 
       />
     
       <main className='work'>
         <Content 
+          id='#about'
           title='Легенда Байкала'
           bodyText={[
             {text: 'Legend of Baikal — это вода премиум-класса, которая уже успела покорить сердца ценителей качества и завоевать множество наград.'}, 
@@ -32,6 +30,7 @@ const KnowledgeBase: FC = () => {
           ]}
         />
         <Content 
+          id='#task'
           subTitle='Задача'
           bodyText={[
             {text: 'Я присоединилась к проекту на финальной стадии, когда дизайн уже был готов, и моей зоной ответственности стал процесс оформления заказа.'}, 
@@ -42,8 +41,9 @@ const KnowledgeBase: FC = () => {
             {text: 'Обсудив проблему со стейкхолдерами, мы пришли к выводу, что это нужно срочно исправлять.'} 
           ]}
         />
-        <Content 
-          subTitle='Решение'
+        <Content
+          id='#solutions'
+          subTitle='Решения'
           bodyText={[
             {title: "Оповещение об изменениях в корзине при смене адреса доставки", 
              text: 'Теперь, когда пользователь менял город доставки, он сразу видел уведомление о том, что ассортимент или цены изменились. Это помогло избежать неприятных сюрпризов на этапе оплаты.'},
@@ -73,7 +73,8 @@ const KnowledgeBase: FC = () => {
         />
 
         <Content 
-          title='Результат'
+          id='#result'
+          subTitle='Результат'
           bodyText={[
             {text: 'К сожалению, во время презентации решений заказчику мы столкнулись с проблемой: сайт для разных регионов технически состоял из трех отдельных платформ, и синхронизация корзины между ними оказалась слишком ресурсоемкой. А проект нужно было запускать уже через неделю.'},
             {text: 'После обсуждения с командой и анализа технических ограничений я предложила альтернативное решение:'},

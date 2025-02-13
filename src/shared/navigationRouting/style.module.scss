@@ -17,7 +17,7 @@
     &__preview {
         padding: 1.6rem;
         background-color: #F5F5F8;
-        border-radius: 3.2rem;
+        border-radius: 3rem;
 
         @media (max-width: 768px) {
             padding: 0;
@@ -28,8 +28,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 3.2rem;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 2.6rem;
     }
   
     &__svg {
@@ -47,7 +46,7 @@
         width: fit-content;
         padding-left: 1rem;
         padding-right: 1rem;
-        border-radius: 3.2rem;
+        border-radius: 2.6rem;
         background-color: #F5F5F8;
         
         @media (max-width: 768px) {

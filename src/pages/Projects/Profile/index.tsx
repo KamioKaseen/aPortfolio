@@ -23,8 +23,8 @@ const ShopConstructor = () => {
           id='#task'
           subTitle='Задача'
           bodyText={[
-            {textItem: 'Упростить взаимодействие между кандидатами и работодателем.'},
-            {textItem: 'Сделать процесс трудоустройства максимально прозрачным и комфортным.'},
+            {textItem: 'Упростить взаимодействие между кандидатами и работодателем'},
+            {textItem: 'Сделать процесс трудоустройства максимально прозрачным и комфортным'},
           ]}
         />
         <Content 
@@ -37,7 +37,7 @@ const ShopConstructor = () => {
          
         <Image image='Profile/profile-team.webp'/>
         <Content 
-          bodyText={[{text: 'Проверили гипотезу проведя интервью с кандидатами, которые прошли отбор в компанию'}]}
+          bodyText={[{text: 'Проверили гипотезу проведя интервью с кандидатами, которые прошли отбор в компанию.'}]}
         />
 
         <Image image='Profile/who.png'/>
@@ -55,7 +55,7 @@ const ShopConstructor = () => {
 
         <Image image='Profile/profile-tests.webp'/>
         <Content 
-          bodyText={[{text: 'Во время работы я придерживалась гайдлайнов и UI-кит студии'}]}
+          bodyText={[{text: 'Во время работы я придерживалась гайдлайнов и UI-кит студии.'}]}
         />
 
         <Image image='Profile/profile-uikit.webp'/>

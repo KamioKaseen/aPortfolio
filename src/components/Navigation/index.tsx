@@ -26,7 +26,7 @@ const Navigation = () => {
             <a href="mailto:kisialin@gmail.com" target='_blank'>
               <span className={style.navigation__text}>
                 <Chips>
-                  Kisialin@gmail.com
+                  kisialin@gmail.com
                 </Chips>
               </span>
               

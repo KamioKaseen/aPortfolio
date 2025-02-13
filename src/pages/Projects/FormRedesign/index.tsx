@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Image from '../components/Image';
 import NavigationBar from '../../../shared/navigationRouting';
 import Content from '../components/Content';
+import ScrollLinked from '../components/ScrollLinked';
 
 const ShopConstructor: FC = () => {
   return (
@@ -12,6 +13,7 @@ const ShopConstructor: FC = () => {
       />
     
       <main className='work'>
+        <ScrollLinked></ScrollLinked>
         <Content 
           id='#about'
           title='Редизайн, увеличивший конверсию'
@@ -75,7 +77,9 @@ const ShopConstructor: FC = () => {
         />
         <Content 
           bodyText={[
-            {title: 'Гипотеза', text: 'Проверила гипотезу коридорным тестированием, а также ее косвенно подтвердил анализ конкурентов — на сайтах других студий акцент всегда на больших и сочных фото проектов.'}]}
+            {
+              title: 'Гипотеза', 
+              text: 'Если добавим возможность оставить заявку без заполнения полноценного брифа, мы увеличим конверсию заполнения заявок.'}]}
         />
          <Content 
           bodyText={[{text: 'Скринфлоу новой версии формы обратной связи. Новая версия позволяет избежать необходимоти отвечать на 19 вопросов (основновной сценарий) для пользователей.'}]}

@@ -1,13 +1,7 @@
 .gridContainer {
     width: 100%;
-    padding-bottom: 1rem;
+    max-width: 100%;
     overflow-x: auto; 
-    // margin-left: 6%;
-    // transform: translateX(19rem);
-
-    @media (max-width: 768) {
-        
-    }
    
     &__grid {
         display: grid;
@@ -63,20 +57,19 @@
     }
 
     &::-webkit-scrollbar {  
-        width: 1.2rem;
-        height: .5rem;    
+        display: none;  
     }  
     
-    &::-webkit-scrollbar-track {  
-        background: #f1f1f1;
-    }  
+    // &::-webkit-scrollbar-track {  
+    //     background: #f1f1f1;
+    // }  
     
-    &::-webkit-scrollbar-thumb {  
-        background: #888; 
-        border-radius: 6px;  
-    }  
+    // &::-webkit-scrollbar-thumb {  
+    //     background: #888; 
+    //     border-radius: 6px;  
+    // }  
     
-    &::-webkit-scrollbar-thumb:hover {  
-        background: #555;
-    }    
+    // &::-webkit-scrollbar-thumb:hover {  
+    //     background: #555;
+    // }    
 }

@@ -41,7 +41,7 @@ const Content: FC<ContentProps> = ({
 }) => {  
   
   return (  
-    <div id={id} className={styles.content}>  
+    <section id={id} className={styles.content}>  
       <div className={styles.content__header}>  
         {title && <h1 className={styles.content__title}>{title}</h1>}  
         {subTitle && <h3 className={styles.content__subTitle}>{subTitle}</h3>}  
@@ -95,7 +95,7 @@ const Content: FC<ContentProps> = ({
           </div>  
         )}  
       </div>  
-    </div>  
+    </section>  
   );  
 };  
 

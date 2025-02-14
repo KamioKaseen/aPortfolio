@@ -13,6 +13,7 @@
         font-weight: 300;
         font-size: 6rem;
         margin-left: 2rem;
+        cursor: default;
 
         @media (max-width: 768px) {
             font-size: 2.6rem;
@@ -61,6 +62,7 @@
     &__item1 {
         grid-row: span 3 / span 3;
         background-color: $bg-gray;
+        min-height: 30vh;
     }
     
     &__item2 {

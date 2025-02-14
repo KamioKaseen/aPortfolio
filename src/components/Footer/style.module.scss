@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     margin-top: 7rem;
     height: 18rem;
     color: white;
@@ -10,6 +9,15 @@
     font-size: 2.8rem;
     font-weight: 300;
     letter-spacing: .1rem;
+
+    @media (max-width: 768px) {
+        margin-top: 5rem;
+        height: 14rem;
+    } 
+
+    // margin-top: 1rem;
+    // height: 14rem;
+    // padding-bottom: 5rem;
 
     &__container {
         display: flex;
@@ -56,8 +64,5 @@
         color: $font-gray;
     }
 
-    @media (max-width: 768px) {
-        margin-top: 5rem;
-        height: 14rem;
-    } 
+   
 }

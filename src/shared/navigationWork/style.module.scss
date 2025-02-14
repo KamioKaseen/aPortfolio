@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 1.2rem;
     position: fixed;
-    bottom: 1rem;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
     
@@ -14,7 +14,7 @@
     }
 
     @media (max-width: 480px) {
-        padding: 0 2rem;
+        padding: 0 1.6rem;
         width: 100%;
     }
 
@@ -35,16 +35,16 @@
         font-size: 1.8rem;
         font-weight: 300;
         line-height: 3rem;
-        letter-spacing: .1rem;  
+        letter-spacing: .1rem; 
     }
 
     &__links {
-        padding: 1.2rem;
+        padding: 1.2rem 3.2rem;
         display: flex;
         justify-content: center;
         gap: 3.6rem;
         border-radius: 5.6rem;
-        background-color: rgba(220, 211, 235, .7);
+        background-color: rgba(220, 211, 235, .85);
         color: $font-black; 
 
         @media (max-width: 1280px) {

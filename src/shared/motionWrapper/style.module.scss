@@ -1,0 +1,11 @@
+.wrapper {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(16, 16, 16);
+   z-index: 11111;
+   pointer-events: none;
+   top: -50%;
+   left: 0;
+ }
+ 

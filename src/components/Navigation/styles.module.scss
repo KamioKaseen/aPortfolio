@@ -5,11 +5,19 @@
     justify-content: center;
     width: 100%;
     max-height: 7rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
     top: 1.6rem;
 
     @media (max-width: 1280px) {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        height: 4.5rem;   
+    } 
+
+    @media (max-width: 768px) {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
         height: 4.5rem;   
     } 
     

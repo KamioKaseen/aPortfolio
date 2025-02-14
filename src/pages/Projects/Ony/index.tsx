@@ -1,30 +1,17 @@
 import { FC } from 'react';
-// import { motion  } from 'framer-motion';
 import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
 import Table from '../components/Table';
 import NavigationBar from '../../../shared/navigationRouting';
 import { useBreakpoints } from '../../../utils/use-breackpoints';
-import { motion } from 'framer-motion';
 import tables from '../../../data/tableOny.json';
 
-// const pageVariants = {
-//   initial: { opacity: 0, y: "100%" },
-//   animate: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Быстро поднимается
-//   exit: { opacity: 0, y: 0, transition: { duration: 0.3 } },
-// };
-
-const ShopConstructor: FC = () => {
+const Ony: FC = () => {
   const { isDown } = useBreakpoints()
 
   return (
-    <motion.div
-      initial="initial" 
-      animate="animate" 
-      exit="exit" 
-      // variants={pageVariants}
-    >
+    <div>
       <Header 
         image='Ony/ony-header.webp'
         backgroundImage='url(Ony/mountain.webp)'
@@ -120,10 +107,10 @@ const ShopConstructor: FC = () => {
 
         <NavigationBar />
       </main>
-    </motion.div>
+    </div>
   )
 }
 
-export default ShopConstructor;
+export default Ony;
 
 

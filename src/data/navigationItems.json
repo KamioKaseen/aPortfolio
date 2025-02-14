@@ -1,44 +1,52 @@
-
-{
-    "/ony": [
-        {"id": "about", "label": "О проекте"},
-        {"id": "searchAnalysis", "label": "Исследование и анализ"},
-        {"id": "jobStories", "label": "Job Stories"},
-        {"id": "cjm", "label": "CJM"},
-        {"id": "whatcanbe", "label": "Что можно улучшить"},
-        {"address": "#"}
-        ],
-    "/form-redesign": [
-        {"id": "about", "label": "О проекте"},
-        {"id": "task", "label": "Задача"},
-        {"id": "analysis", "label": "Анализ"},
-        {"id": "benchmarking", "label": "Бенчмаркинг"},
-        {"id": "hypothesesSolutions", "label": "Гипотезы и решения"},
-        {"id": "result", "label": "Результат"},
-        {"address": "#"}
-    ],
-    "/shop-constructor": [
-        {"id": "about", "label": "О проекте"},
-        {"id": "task", "label": "Задача"},
-        {"id": "benchmarking", "label": "Бенчмаркинг"},
-        {"id": "analysis", "label": "Анализ"},
-        {"id": "solutions", "label": "Решения"},
-        {"id": "result", "label": "Результат"},
-        {"address": "#"}
-    ],
-    "/baikal": [
-        {"id": "about", "label": "О проекте"},
-        {"id": "task", "label": "Задача"},
-        {"id": "solutions", "label": "Решения"},
-        {"id": "result", "label": "Результат"},
-        {"address": "https://new.legendbaikal.ru/"}
-    ],
-    "/profile": [
-        {"id": "about", "label": "О проекте"},
-        {"id": "task", "label": "Задача"},
-        {"id": "hypothesesSolutions", "label": "Гипотезы и решения"},
-        {"id": "result", "label": "Результат"},
-        {"address": "#"}
-    ]
+{  
+    "/ony": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "searchAnalysis", "label": "Исследование и анализ"},  
+            {"id": "jobStories", "label": "Job Stories"},  
+            {"id": "cjm", "label": "CJM"},  
+            {"id": "whatcanbe", "label": "Что можно улучшить"}  
+        ],  
+        "address": "#"  
+    },  
+    "/form-redesign": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "analysis", "label": "Анализ"},  
+            {"id": "benchmarking", "label": "Бенчмаркинг"},  
+            {"id": "hypothesesSolutions", "label": "Гипотезы и решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "#"  
+    },  
+    "/shop-constructor": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "benchmarking", "label": "Бенчмаркинг"},  
+            {"id": "analysis", "label": "Анализ"},  
+            {"id": "solutions", "label": "Решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "#"  
+    },  
+    "/baikal": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "solutions", "label": "Решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "https://new.legendbaikal.ru/"  
+    },  
+    "/profile": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "hypothesesSolutions", "label": "Гипотезы и решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "#"  
+    }  
 }
-    

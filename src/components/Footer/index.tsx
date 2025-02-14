@@ -3,7 +3,6 @@ import Chips from '../../shared/chips';
 import style from './style.module.scss';
 
 const Footer = () => {
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

@@ -15,10 +15,14 @@ const Chips: FC<ChipsProps> = ({ children, className = ""}) => {
   const [hovered, setHovered] = useState(false);
   return (
     <motion.button
-      className={classNames(styles.chips, className)}
+      className={classNames(styles.chips__container, className)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-    >
+     >
+      <motion.div
+        className={classNames(styles.chips, className)}
+      > 
+    
       <AnimatePresence mode="wait">
         <motion.span
           key={hovered ? "hover" : "default"}
@@ -31,7 +35,9 @@ const Chips: FC<ChipsProps> = ({ children, className = ""}) => {
           {children}
         </motion.span>
       </AnimatePresence>
+    </motion.div>
     </motion.button>
+   
   );
 };
 

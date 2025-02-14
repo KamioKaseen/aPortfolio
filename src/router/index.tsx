@@ -1,18 +1,9 @@
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import ScrollToTop from '../shared/scrollToTop';
-import Home from '../pages/Home';
+import { HashRouter as Router, useLocation } from 'react-router-dom';
 import Layout from '../components/Layout';
 import NoiseBackground from '../background';
-import Ony from '../pages/Projects/Ony';
-import Form from '../pages/Projects/FormRedesign';
-import DailyUI from '../pages/Projects/DailyUI';
-import IssueTracker from '../pages/Projects/IssueTracker';
-import ShopConstructor from '../pages/Projects/ShopConstructor';
-import Baikal from '../pages/Projects/LegengOfBaikal';
-import KnowledgeBase from '../pages/Projects/KnowledgeBase';
-import Profile from '../pages/Projects/Profile';
-import { AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
+// import CursorFollower from '../shared/cursor';
+import AnimatedRoutes from '../components/AnimatedRoutes';
 
 const titles = {  
     '/': 'Алина Воронкова',  
@@ -37,27 +28,18 @@ const TitleHandler = () => {
     return null;  
 };  
 
-const AppRouter = () => (  
-    <Router>  
+const AppRouter = () => {
+    return (
+        <Router>  
+        {/* <CursorFollower /> */}
         <Layout>  
             <NoiseBackground />  
-            <ScrollToTop />  
             <TitleHandler />  
-            <AnimatePresence mode="sync">  
-                <Routes>  
-                    <Route path="/" element={<Home />} />  
-                    <Route path="/ony" element={<Ony />} />  
-                    <Route path="/form-redesign" element={<Form />} />  
-                    <Route path="/dailyui" element={<DailyUI />} />  
-                    <Route path="/issue-tracker" element={<IssueTracker />} />  
-                    <Route path="/shop-constructor" element={<ShopConstructor />} />  
-                    <Route path="/baikal" element={<Baikal />} />  
-                    <Route path="/knowledge-base" element={<KnowledgeBase />} />  
-                    <Route path="/profile" element={<Profile />} />  
-                </Routes>  
-            </AnimatePresence>  
+            <AnimatedRoutes />
         </Layout>  
     </Router>  
-);  
+    )
+    
+}  
 
 export default AppRouter;  

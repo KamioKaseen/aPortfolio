@@ -38,14 +38,13 @@ const AnimatedRoutes = () => {
  
   return (  
     <AnimatePresence mode="wait">  
-    
-      <Routes location={location} key={location.pathname}>  
+      <Routes location={location} key={pathname}>  
           {routes.map(({ path, element }, index) => (  
               <Route   
                 key={index}   
                 path={path}   
                 element={
-                  <MotionWrapper onAnimationComplete={handleAmination}>
+                  <MotionWrapper  onAnimationComplete={handleAmination}>
                     <ScrollToTop/>
                     {element}
                     {pathname !== '/' && <NavigationWork isVisible={isAnimationComplete} navigationItems={NAV_ITEMS} />}

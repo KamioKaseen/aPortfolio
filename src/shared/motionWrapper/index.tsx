@@ -37,7 +37,7 @@ const MotionWrapper: FC<MotionWrapperProps> = ({ children, onAnimationComplete }
   // }, [children]);  
 
   return (  
-    <div>  
+    <>  
       <motion.div   
         className={styles.wrapper}  
         initial={{ scaleY: 2 }}
@@ -53,7 +53,7 @@ const MotionWrapper: FC<MotionWrapperProps> = ({ children, onAnimationComplete }
       <div ref={contentRef}>  
         {children}
       </div>  
-    </div>  
+    </>  
   );  
 };  
 

@@ -10,8 +10,6 @@ const Footer = () => {
     });
   };
 
-  
-
   return (
     <footer className={style.footer}>
       <div className={style.footer__container}>

@@ -29,13 +29,14 @@
         display: grid;
         place-items: center;
         height: 5.2rem;
-        background-color: rgba(220, 211, 235, .85);
+        background-color: rgba(0, 0, 0, 0.9);
         border-radius: 2.4rem;
         font-family: 'GeologicaExtraLight';
         font-size: 1.8rem;
         font-weight: 300;
         line-height: 3rem;
         letter-spacing: .1rem; 
+        color: $font-white;
     }
 
     &__links {
@@ -52,7 +53,7 @@
         }
 
         @media (max-width: 768px) {
-            background-color: rgba(220, 211, 235, .9);
+            background-color: rgba(0, 0, 0, 0.9);
             border-radius: 2.4rem;
             flex-direction: column;
         }
@@ -77,6 +78,7 @@
 
         @media (max-width: 768px) {
             font-size: 1.9rem;
+            color: $font-white;
         }
     }
 

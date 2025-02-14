@@ -69,7 +69,7 @@ const NavigationRouting = () => {
   const nextRoute = routes[(index + 1) % routes.length];
 
   return (
-    <div className={styles.navigationBar}>
+    <div id="navRouting" className={styles.navigationBar}>
       <button className={styles.navigationBar__button} onClick={goPrev}>
         <div className={styles.navigationBar__arrow}>
           <img className={styles.navigationBar__svg} src="Icons/left.svg" alt="left" />

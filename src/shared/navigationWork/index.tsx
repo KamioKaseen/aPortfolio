@@ -6,6 +6,7 @@ import { scrollToId } from "../../utils/scrollToId";
 import { useBreakpoints } from "../../utils/use-breackpoints";
 import ArrowIcon from "../arrowIcon";
 import { motion } from "framer-motion";
+import useElementInView from "../../utils/use-elementInView";
 
 export interface NavItem {
   id: string;
@@ -17,10 +18,11 @@ export interface NavigationWorkProps {
   isVisible: boolean;
 }
 
-const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible}) => {
+const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible }) => {
   const [isOpen, setIsOpen] = useState(true);
   const { pathname } = useLocation();
   const { isDown } = useBreakpoints();
+  const isFooterInView = useElementInView("navRouting");
 
   const currentProject = navigationItems[pathname];
   const website = currentProject?.address;
@@ -54,7 +56,10 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible}) 
         damping: 10
       }}
     >
-      <div className={styles.navigation__buttonGroup}>
+      <motion.div 
+        animate={{ opacity: isFooterInView ? 0 : 1, }}
+        transition={{ duration: 0.3 }}
+        className={styles.navigation__buttonGroup}>
         {isOpen && (
           <div className={styles.navigation__links}>
             {currentProject.anchors.map(({ id, label }, index) => (
@@ -82,10 +87,10 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible}) 
             Разделы
           </button>
         )}
-      </div>
+      </motion.div>
 
       {website && website !== "#" && (
-        <a
+        <motion.a
           href={website}
           target="_blank"
           rel="noopener noreferrer"
@@ -93,9 +98,11 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible}) 
             styles.navigation__siteLink,
             styles.navigation__link
           )}
+          animate={{ opacity: isFooterInView ? 0 : 1, }}
+          transition={{ duration: 0.3 }}
         >
           {!isDown("md") ? "Посетить сайт" : <ArrowIcon className={styles.navigation__icon} />}
-        </a>
+        </motion.a>
       )}
     </motion.div>
   );

@@ -8,7 +8,7 @@ const NoiseBackground = () => {
     if (!canvas) return;
     const ctx = canvas.getContext("2d", { willReadFrequently: true });
 
-    const pixelSize = 2.5; // Размер пикселя шума (чем больше, тем крупнее шум)
+    const pixelSize = 2.5;
 
     const resizeCanvas = () => {
       const dpr = window.devicePixelRatio || 1;
@@ -29,11 +29,11 @@ const NoiseBackground = () => {
         const buffer = new Uint32Array(imageData.data.buffer);
       
         for (let i = 0; i < buffer.length; i++) {
-          const r = Math.random() * 155; // Красный
-          const g = Math.random() * 155; // Зеленый
-          const b = Math.random() * 155; // Синий
+          const r = Math.random() * 155;
+          const g = Math.random() * 155;
+          const b = Math.random() * 155;
       
-          buffer[i] = (255 << 24) | (r << 16) | (g << 8) | b; // Формируем цветной пиксель
+          buffer[i] = (255 << 24) | (r << 16) | (g << 8) | b;
         }
       
         ctx.putImageData(imageData, 0, 0);
@@ -44,7 +44,7 @@ const NoiseBackground = () => {
 
     const loop = () => {
       const now = performance.now();
-      if (now - lastUpdate > 90) { // Обновляем шум раз в 50 мс
+      if (now - lastUpdate > 90) {
         generateNoise();
         lastUpdate = now;
       }
@@ -72,8 +72,8 @@ const NoiseBackground = () => {
         height: "100vh",
         zIndex: -1,
         pointerEvents: "none",
-        opacity: 0.15, // Регулируй уровень шума
-        imageRendering: "pixelated", // Увеличивает пиксели без размытия
+        opacity: 0.080,
+        imageRendering: "pixelated",
       }}
     />
   );

@@ -51,26 +51,6 @@
         } 
     }
 
-    &__backContainer {
-        display: grid;
-        place-items: center;
-        border-radius: 50%;
-        width: 7rem;
-        height: 100%;
-        background-color: $bg-chips;
-        fill: $font-white;
-
-        @media (max-width: 1280px) {
-            width: 4.5rem;
-        } 
-
-        &:hover {
-            background-color: $bg-white;
-            fill: $font-black;
-            cursor: pointer;
-        }
-    }
-
     &__iconContainer {
         display: none;
         border-radius: 50%;

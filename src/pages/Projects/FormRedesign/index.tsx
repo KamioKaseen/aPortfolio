@@ -8,8 +8,8 @@ const ShopConstructor: FC = () => {
   return (
     <>
       <Header 
-        image='Form/form-header.webp'
-        video='Form/form-video.webm'
+        video='Form/form-header.webm'
+        backgroundImage='url(Form/form-background.webp)'
       />
     
       <main className='work'>
@@ -80,18 +80,23 @@ const ShopConstructor: FC = () => {
               title: 'Гипотеза', 
               text: 'Если добавим возможность оставить заявку без заполнения полноценного брифа, мы увеличим конверсию заполнения заявок.'}]}
         />
+
+        <Image image='Form/form-mobile.webp'/>
          <Content 
           bodyText={[{text: 'Скринфлоу новой версии формы обратной связи. Новая версия позволяет избежать необходимоти отвечать на 19 вопросов (основновной сценарий) для пользователей.'}]}
         />
+        <Image image='Form/form-discuss.webp'/>
 
         <Image image='Form/form-flow.webp'/>
       
-        <Image image='Form/form-discuss.webp'/>
         <Content 
           bodyText={[
             {text: 'Продвигать эту гипотезу было непросто. Стейкхолдеры хотели минимизировать взаимодействие с менеджерами и автоматизировать начало работы с клиентом.'},
             {text: 'Я создала свою версию флоу формы, провела коридорное тестирование и презентовала его результаты стейкхолдерам. Это помогло убедить их в необходимости изменений и стало подтверждением моей гипотезы.'}]}
         />
+
+        <Image image='Form/form-guide.webp'/>   
+
         <Content 
           id='#result'
           subTitle='Результат'

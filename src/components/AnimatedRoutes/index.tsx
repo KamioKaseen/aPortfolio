@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';  
+import { Route, Routes, useLocation, useSearchParams } from 'react-router-dom';  
 import { AnimatePresence } from 'framer-motion';  
 import Home from '../../pages/Home';  
 import Ony from '../../pages/Projects/Ony';  
@@ -14,6 +14,7 @@ import MotionWrapper from '../../shared/motionWrapper';
 import ScrollToTop from '../../shared/scrollToTop';
 import NAV_ITEMS from '../../data/navigationItems.json';
 import NavigationWork from '../../shared/navigationWork';
+import Modal from '../../shared/ndaModal';
 
 const routes = [  
     { path: "/", element: <Home /> },  
@@ -32,6 +33,15 @@ const AnimatedRoutes = () => {
   const location = useLocation();
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const isModalOpen = searchParams.get('modal') === 'open';
+
+  const handleCloseModal = () => {
+    const newParams = new URLSearchParams(searchParams); 
+    newParams.delete('modal');
+    setSearchParams(newParams, { replace: true });
+  };
+
   const handleAmination = () => {
     setIsAnimationComplete(true)
   }
@@ -45,12 +55,14 @@ const AnimatedRoutes = () => {
                 path={path}   
                 element={
                   <MotionWrapper  onAnimationComplete={handleAmination}>
+                    <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
                     <ScrollToTop/>
                     {element}
                     {pathname !== '/' && <NavigationWork isVisible={isAnimationComplete} navigationItems={NAV_ITEMS} />}
                   </MotionWrapper>
                 }   
-              />  
+              >
+              </Route> 
           ))}  
       </Routes>  
     </AnimatePresence>   

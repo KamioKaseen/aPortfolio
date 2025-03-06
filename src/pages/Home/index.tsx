@@ -21,7 +21,7 @@ const Home = () => {
       <div className={styles.home__grid}>
         {cards.map((card) => (
           <Card
-            key={card.route}
+          key={Math.random()}
             {...card}
           />
         ))}

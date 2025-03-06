@@ -35,8 +35,7 @@
     "className": "home__item4"  
   },  
   {  
-    "route": "issue-tracker",  
-    "isNDA": true,
+    "route": "?modal=open",  
     "size": "large",  
     "type": "Orbite",  
     "title": "Клиентский модуль в трекере задач",  
@@ -54,8 +53,7 @@
     "className": "home__item6"  
   },  
   {  
-    "route": "knowledge-base",  
-    "isNDA": true,
+    "route": "?modal=open",  
     "size": "large",  
     "type": "Orbite",  
     "title": "Корпоративная база знаний",  

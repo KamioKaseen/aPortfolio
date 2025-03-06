@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { useLocation } from "react-router-dom";
 import { scrollToId } from "../../utils/scrollToId";
 import { useBreakpoints } from "../../utils/use-breackpoints";
-import ArrowIcon from "../arrowIcon";
+import ArrowIcon from "../../icons/arrowIcon";
 import { motion } from "framer-motion";
 import useElementInView from "../../utils/use-elementInView";
 
@@ -44,12 +44,12 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
   return (
     <motion.div
       className={styles.navigation}
-      initial={{ y: 100, x: '-50%' }}
+      initial={{ y: 90, x: '-50%' }}
       animate={{y: isVisible ? -10 : 0 }}
-      exit={{ y: 100, }}
+      exit={{ y: 90, }}
       transition={{
         duration: 1,
-        delay: .6,
+        delay: .2,
         ease: "easeInOut",
         type: "spring",
         stiffness: 100,
@@ -61,7 +61,19 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
         transition={{ duration: 0.3 }}
         className={styles.navigation__buttonGroup}>
         {isOpen && (
-          <div className={styles.navigation__links}>
+          <motion.div 
+            className={styles.navigation__links}
+            initial={{opacity: isDown('sm') ? 0 : 1 , y: 0, }}
+            animate={{opacity: 1, y: isDown('sm') ? -10 : 0 }}
+            exit={{opacity: isDown('sm') ? 0 : 1 , y: 0, }}
+            transition={{
+            duration: .6,
+            ease: "easeInOut",
+            type: "spring",
+            stiffness: 100,
+            damping: 10
+        }}
+          >
             {currentProject.anchors.map(({ id, label }, index) => (
               <button
                 key={`${pathname}${id}${index}`}
@@ -76,7 +88,7 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
                 {label}
               </button>
             ))}
-          </div>
+          </motion.div>
         )}
 
         {isDown("md") && (

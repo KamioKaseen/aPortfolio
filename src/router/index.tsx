@@ -37,9 +37,8 @@ const AppRouter = () => {
             <TitleHandler />  
             <AnimatedRoutes />
         </Layout>  
-    </Router>  
+        </Router>  
     )
-    
 }  
 
 export default AppRouter;  

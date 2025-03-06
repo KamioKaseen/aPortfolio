@@ -14,29 +14,26 @@ export interface ChipsProps {
 const Chips: FC<ChipsProps> = ({ children, className = ""}) => {
   const [hovered, setHovered] = useState(false);
   return (
-    <motion.button
+    <button
       className={classNames(styles.chips__container, className)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
      >
-      <motion.div
-        className={classNames(styles.chips, className)}
-      > 
-    
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={hovered ? "hover" : "default"}
-          initial={{ y: "100%", opacity: 0 }}
-          animate={{ y: "0%", opacity: 1 }}
-          exit={{ y: "-100%", opacity: 0 }}
-          style={{fontSize: 'inherit'}}
-          transition={{ duration: .2 }}
-        >
-          {children}
-        </motion.span>
-      </AnimatePresence>
-    </motion.div>
-    </motion.button>
+      <div className={classNames(styles.chips, className)}> 
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={hovered ? "hover" : "default"}
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            exit={{ y: "-100%", opacity: 0 }}
+            style={{fontSize: 'inherit'}}
+            transition={{ duration: .2 }}
+          >
+            {children}
+          </motion.span>
+        </AnimatePresence>
+      </div>
+    </button>
    
   );
 };

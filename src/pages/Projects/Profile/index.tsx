@@ -40,8 +40,8 @@ const ShopConstructor = () => {
           bodyText={[{text: 'Проверили гипотезу проведя интервью с кандидатами, которые прошли отбор в компанию.'}]}
         />
 
-        <Image image='Profile/who.png'/>
-        <Image image='Profile/profile-tasks.webp'/>
+        <Image image='Profile/profile-mopsik.webp'/>
+  
         <Content 
           id='#result'
           subTitle='Результаты'

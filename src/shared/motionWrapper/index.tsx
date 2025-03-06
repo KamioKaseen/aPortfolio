@@ -1,18 +1,39 @@
-import { ReactNode, useRef,} from 'react';  
+import { ReactNode } from 'react';  
 import { FC } from "react";  
 import styles from './style.module.scss';  
 import { motion } from 'framer-motion';  
-
 export interface MotionWrapperProps {  
   children: ReactNode;  
   onAnimationComplete: () => void;
 }  
 
 const MotionWrapper: FC<MotionWrapperProps> = ({ children, onAnimationComplete }) => {  
-  // const [isLoaded, setIsLoaded] = useState(false);  
-  const contentRef = useRef<HTMLDivElement>(null);  
+  return (  
+    <>  
+      <motion.div   
+        className={styles.wrapper}  
+        initial={{ height: '105vh' }}
+        // animate={{ scaleY: isLoaded ? 0 : 2 }}
+        animate={{ height: 0 }}
+        exit={{ height: '105vh' }}
+        transition={{  
+          duration: .65,  
+          ease: 'easeInOut',  
+        }}  
+        onAnimationComplete={onAnimationComplete}
+      />  
+      <div>  
+        {children}
+      </div>  
+    </>  
+  );  
+};  
 
-  // useEffect(() => {  
+export default MotionWrapper;
+
+  // const [isLoaded, setIsLoaded] = useState(false);  
+
+ // useEffect(() => {  
   //   const checkImagesLoaded = () => {  
   //     if (!contentRef.current) {  
   //       setIsLoaded(true);  
@@ -35,26 +56,3 @@ const MotionWrapper: FC<MotionWrapperProps> = ({ children, onAnimationComplete }
 
   //   return () => clearTimeout(timeoutId);  
   // }, [children]);  
-
-  return (  
-    <>  
-      <motion.div   
-        className={styles.wrapper}  
-        initial={{ scaleY: 2 }}
-        // animate={{ scaleY: isLoaded ? 0 : 2 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 2 }}
-        transition={{  
-          duration: 1,  
-          ease: 'easeInOut',  
-        }}  
-        onAnimationComplete={onAnimationComplete}
-      />  
-      <div ref={contentRef}>  
-        {children}
-      </div>  
-    </>  
-  );  
-};  
-
-export default MotionWrapper;

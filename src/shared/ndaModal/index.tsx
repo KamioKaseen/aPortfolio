@@ -2,39 +2,37 @@ import { motion, AnimatePresence, PanInfo, useAnimationControls } from "framer-m
 import { FC, useState } from "react";
 import styles from './style.module.scss';
 import { createPortal } from "react-dom";
-import LeftIcon from "../leftIcon";
 import classNames from "classnames";
 import { useBreakpoints } from "../../utils/use-breackpoints";
-import { useNavigate } from "react-router-dom";
+import BackButton from "../backButton";
 
 interface ModalProps {
-  route: string;
   isOpen: boolean;
   onClose: () => void;
 }
 
 const dropIn = {
   hidden: { x: "100%" },
-  visible: { x: 0, transition: { duration: 0.3  }, },
-  exit: { x: "100%", transition: { duration: 0.3 }, },
+  visible: { x: 0, transition: { duration: 0.4, type: "spring"  }, },
+  exit: { x: "100%", transition: { duration: 0.4, type: "spring" }, },
 };
 
 const mobileDropIn = {
   hidden: { y: "100%" },
-  visible: { y: 0, transition: { duration: 0.3, type: "spring" } },
-  exit: { y: "100%", transition: { duration: 0.3, type: "spring"  }, },
+  visible: { y: 0, transition: { duration: 0.4, type: "spring" } },
+  exit: { y: "100%", transition: { duration: 0.4, type: "spring"  }, },
 };
 
 const errorAnim = {  
   hidden: { opacity: 1, y: -20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.3 , type: "spring" } }, 
-  exit: { opacity: 0, y: -20, transition: { duration: 0.3, type: "spring" } },   
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 , type: "spring" } }, 
+  exit: { opacity: 0, y: -20, transition: { duration: 0.4, type: "spring" } },   
 };  
 
-const Modal: FC<ModalProps> = ({ isOpen, onClose, route }) => {
+const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
   const [ isError, setIsError ] = useState(false);
   const { isDown } = useBreakpoints();
-  const navigate = useNavigate();
+  const controls = useAnimationControls();
   
   const handleClose = () => {
     setIsError(false)
@@ -48,7 +46,6 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, route }) => {
     if(password !== "505166") {
       setIsError(true)
     } else {
-      navigate(route)
       setIsError(false)
     }
   };  
@@ -58,18 +55,16 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, route }) => {
       handleClose();
     }
   };
-
-  const controls = useAnimationControls();
  
   const handleClick = () => {
     controls.start("flip");
   };
 
-
   return createPortal(
-    <AnimatePresence>
+    <AnimatePresence >
       {isOpen && (
         <motion.div
+          key="modal-overlay"
           className={styles.overlay}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -77,6 +72,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, route }) => {
           onClick={handleClose}
         >
           <motion.div
+            key="modal"
             className={styles.modal}
             variants={isDown('lg') ? mobileDropIn : dropIn}
             initial="hidden"
@@ -89,10 +85,11 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, route }) => {
               onDragEnd: handleDragEnd,
             })}
           >
-            <button className={styles.modal__backButton} onClick={handleClose}>
-                <LeftIcon className={styles.modal__back} />
-            </button>
-
+            {!isDown('lg') ? <BackButton className={styles.modal__backButton} onClick={handleClose} />
+             : <button className={styles.modal__backButton} />
+          }
+            
+         
             <form className={styles.modal__form} onSubmit={handleSubmit}>
               <img src="Icons/blur-photo.svg" alt="blur-photo" className={styles.modal__photo} />
 

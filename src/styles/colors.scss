@@ -1,9 +1,10 @@
 $bg-black: rgb(21, 21, 21);
 $bg-white: #FFFFFF;
-$bg-gray: rgb(243, 243, 243);
-$bg-blue: rgba(4, 119, 234, 0.8);
-$bg-dark-blue: #1b1923;
-$bg-purple: #7651FC;
+$bg-gray: rgb(247, 247, 249);
+$bg-blue: #EDF3FD;
+$bg-dark-blue: #B9DFF3;
+$bg-pink: #FBE9F4;
+$bg-green: #EEF3E4;
 $bg-chips: rgba(53, 53, 53, 0.411);
 $bg-card-name: rgba(220, 211, 235, 0.32);
 
@@ -31,9 +32,9 @@ $font-black: #000000;
   background-color: $bg-dark-blue;  
 }  
 
-.bg-purple {  
-  background-color: $bg-purple;  
-}  
+// .bg-purple {  
+//   background-color: $bg-purple;  
+// }  
 
 .bg-chips {  
   background-color: $bg-chips;  

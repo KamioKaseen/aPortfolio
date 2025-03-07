@@ -4,68 +4,63 @@
     "size": "middle",  
     "type": "Ony",  
     "title": "Ony – твой психолог",  
-    "image": "Ony/phone.webp",  
-    "backgroundImage": "url(Ony/mountain.webp)",  
-    "chipsBlack": true,  
-    "className": "home__item1"  
-  },  
-  {  
-    "route": "form-redesign",  
-    "size": "large",  
-    "type": "Integlab",  
-    "title": "Редизайн, увеличивший конверсию",  
-    "backdrop": "Form/form.webp",  
-    "phoneLarge": "Form/form-phone.webp",  
-    "className": "home__item2"  
-  },  
-  {  
-    "route": "dailyui",  
-    "size": "small",  
-    "type": "Integlab",  
-    "image": "DailyUI/dailyUI.webp",  
-    "backgroundImage": "url(DailyUI/dailyUI-back.webp)",  
-    "className": "home__item3"  
-  },  
-  {  
-    "route": "shop-constructor",  
-    "size": "large",  
-    "type": "Integlab",  
-    "title": "Конструктор интернет-магазинов",  
-    "backdrop": "Shop-constructor/shop-constructor.webp",  
-    "className": "home__item4"  
+    "image": "ony/ony-main.webp",  
+    "chipsBlack": true
   },  
   {  
     "route": "?modal=open",  
     "size": "large",  
-    "type": "Orbite",  
-    "title": "Клиентский модуль в трекере задач",  
-    "backdrop": "Issue-tracker/issue-tracker.webp",  
-    "phoneLarge": "Issue-tracker/issue-tracker-phone.webp",  
-    "className": "home__item5"  
+    "type": "RedRocket",
+    "title": "Личный кабинет кандидата",  
+    "image": "candidate-lk/candidate-lk-main.webp",
+    "chipsBlack": true
   },  
   {  
-    "route": "baikal",  
+    "route": "daily-ui",  
+    "size": "small",  
+    "type": "DailyUI",  
+    "image": "daily-ui/daily-ui-main.webp",  
+    "chipsBlack": true
+  },  
+  {  
+    "route": "premium-water",  
+    "size": "large",  
+    "type": "NDA",  
+    "title": "Интернет-магазин премиальной воды",  
+    "image": "premium-water/premuim-water-main.webp",
+    "phoneLarge": "premium-water/premium-water-phone.webp",
+    "chipsBlack": true,
+    "nda": true
+  },  
+  {  
+    "route": "?modal=open",  
+    "size": "large",  
+    "type": "Pocketbook",  
+    "title": "Интернет-магазин Pocketbook",  
+    "image": "pocketbook/pocketbook-main.webp",  
+    "chipsBlack": true
+  },  
+  {  
+    "route": "redesign",  
     "size": "middle",  
-    "type": "Integlab",  
-    "title": "Легенда Байкала",  
-    "backgroundImage": "url(Baikal/baikal-back.webp)",  
-    "image": "Baikal/botel.webp",  
-    "className": "home__item6"  
+    "type": "RedRocket",  
+    "title": "Редизайн основных страниц",  
+    "image": "redesign/redesign-main.webp",
+    "chipsBlack": true
   },  
   {  
-    "route": "?modal=open",  
+    "route": "client-lk",  
     "size": "large",  
-    "type": "Orbite",  
-    "title": "Корпоративная база знаний",  
-    "backdrop": "Knowledge-base/knowledge-base.webp",  
-    "phoneLarge": "Knowledge-base/knowledge-base-phone.webp",  
-    "className": "home__item7"  
+    "type": "RedRocket",  
+    "title": "Личный кабинет клиента",  
+    "image": "client-lk/client-lk-main.webp",  
+    "chipsBlack": true
   },  
   {  
-    "route": "profile",  
+    "route": "shop-constuctor",  
     "size": "small",  
-    "type": "Integlab",  
-    "backgroundImage": "url(Profile/profile-header.webp)",  
-    "className": "home__item8"  
+    "type": "Nexus",  
+    "image": "shop-constructor/shop-constructor-main.webp" ,
+    "chipsBlack": true
   }  
 ]

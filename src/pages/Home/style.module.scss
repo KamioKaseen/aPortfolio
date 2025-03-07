@@ -2,6 +2,10 @@
 .home {
     margin-top: 16rem;
     width: 100%;
+
+    @media (max-width: 1280px) {
+        margin-top: 13rem;
+    } 
     
     @media (max-width: 768px) {
         margin-top: 10rem;
@@ -11,38 +15,53 @@
         color: hsla(0, 0%, 100%, 0.36);
         font-family: "GeologicaLight";
         font-weight: 300;
-        font-size: 6rem;
-        margin-left: 2rem;
+        font-size: 10rem;
+        margin-left: 3rem;
         cursor: default;
-
-        @media (max-width: 768px) {
-            font-size: 2.6rem;
-        } 
-
-        @media (max-width: 480px) {
-            font-size: 2.4rem;
-        }
     }
 
     &__subtitle {
         color: $font-white;
         font-family: "GeologicaLight";
         font-weight: 600;
-        font-size: 6rem;
-
-        @media (max-width: 768px) {
-            font-size: 3.8rem;
-        } 
-
-        @media (max-width: 480px) {
-            font-size: 3.2rem;
-        }
+        font-size: 10rem;
     }
+
+    @media (max-width: 1440px) {
+        &__title,
+        &__subtitle {
+          font-size: 7rem;
+        }
+      }
+      
+      @media (max-width: 1024px) {
+        &__title,
+        &__subtitle {
+          font-size: 5rem;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        &__title {
+          margin-left: 2rem;
+        }
+        &__title,
+        &__subtitle {
+          font-size: 3.5rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        &__title,
+        &__subtitle {
+          font-size: 2.4rem;
+        }
+      }
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(3, fit-content);
+        grid-template-rows: repeat(8, fit-content);
         gap: 1rem;
         margin-top: 12.2rem;
         padding: 5.9rem 2.8rem;
@@ -51,8 +70,8 @@
 
         @media (max-width: 768px) {
             display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(1, fit-content);
+            grid-template-rows: repeat(8, fit-content);
             gap: 16px;
             margin-top: 5rem;
             padding: 1.6rem;
@@ -61,13 +80,13 @@
 
     &__item1 {
         grid-row: span 3 / span 3;
-        background-color: $bg-gray;
+        background-color: $bg-blue;
     }
     
     &__item2 {
         grid-column: span 2 / span 2;
         grid-row: span 2 / span 2;
-        background-color: $bg-black;
+        background-color: $bg-pink;
     }
     
     &__item3 {
@@ -81,32 +100,34 @@
         grid-row: span 2 / span 2;
         grid-column-start: 2;
         grid-row-start: 3;
-        background-color: $bg-purple;    
+        background-color: $bg-dark-blue;
     }
     
     &__item5 {
         grid-column: span 2 / span 2;
         grid-row: span 2 / span 2;
         grid-row-start: 5;
-        background-color: $bg-blue;
+        background-color: $bg-green;
     }
     
     &__item6 {
         grid-row: span 3 / span 3;
         grid-column-start: 3;
         grid-row-start: 5;
+        background-color: $bg-pink;
     }
     
     &__item7 {
         grid-column: span 2 / span 2;
         grid-row: span 2 / span 2;
         grid-row-start: 7;
-        background-color: $bg-dark-blue;
+        background-color: $bg-blue;
     }
     
     &__item8 {
         grid-column-start: 3;
         grid-row-start: 8;
+        background-color: $bg-gray;
     }
 }
 
@@ -125,6 +146,7 @@
             grid-area: auto;
             grid-row-start: auto;
             grid-column-start: auto;
+            max-height: 50vh;
         }
 
         &__item1 {

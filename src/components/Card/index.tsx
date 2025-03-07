@@ -3,19 +3,18 @@ import styles from "./style.module.scss";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import { CardData } from "../../types";
-
+import NdaLock from "../../icons/ndaLock";
 
 const Card: FC<CardData> = ({ 
   route, 
   type, 
   title, 
-  backdrop, 
-  image, 
-  phoneLarge, 
+  image,
   className = "", 
   size, 
   backgroundImage, 
-  chipsBlack
+  chipsBlack,
+  nda,
 }) => {
   return (
       <Link 
@@ -23,17 +22,32 @@ const Card: FC<CardData> = ({
         className={classNames(styles.card, styles[`card--${size}`], className)}
         style={{backgroundImage: backgroundImage}}
       >
-        <div 
-          className={styles.card__name}
-          style={{color : chipsBlack ? 'black' : 'white'}}
-        >
-          {type}
-        </div>
+        {nda && 
+          <div className={styles.card__nda}>
+            <NdaLock className={styles.card__ndaIcon} />
+          </div>
+        }
+        {size != 'small' && 
+          <p
+            className={styles.card__name}
+            style={{color : chipsBlack ? 'black' : 'white'}}
+          >
+            {type}
+          </p>
+        }
         
-        {title && <h2 className={styles[`card__title`]} style={{color : chipsBlack ? 'black' : 'white'}} >{title}</h2>}
-        {backdrop && <img className={styles[`card--${size}__backdrop`]} src={backdrop} alt="backdrop"/>}
-        {phoneLarge && <img className={styles[`card--${size}__phoneLarge`]} src={phoneLarge} alt="phone"/>}
-        {image && <img className={styles[`card--${size}__image`]} src={image} alt="image"/>}
+        <h2 className={classNames(styles.card__title, styles[`card--${size}__title`])} style={{color : chipsBlack ? 'black' : 'white'}} >
+          {title}
+        </h2>
+
+        {size === 'middle' 
+          ?
+          <div className={styles['card--middle__imageContainer']}>
+            <img className={styles[`card--${size}__image`]} src={image} alt="backdrop"/>
+          </div> 
+          :
+          <img className={styles[`card--${size}__image`]} src={image} alt="backdrop"/>   
+        }
       </Link>
   );
 };

@@ -13,7 +13,7 @@ const ShopConstructor: FC = () => {
     <>
       <Header 
         image='Shop-constructor/constructor-header.webp'
-        backgroundColor='bg-purple'
+        // backgroundColor='bg-purple'
       />
     
       <main className='work'>

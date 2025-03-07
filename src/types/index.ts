@@ -12,6 +12,7 @@ export interface CardData {
   backdrop?: string;
   chipsBlack?: boolean;
   className: string;
+  nda?: boolean;
 }
 
 interface NavigationItem {  

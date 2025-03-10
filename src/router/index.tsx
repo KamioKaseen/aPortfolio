@@ -8,13 +8,12 @@ import AnimatedRoutes from '../components/AnimatedRoutes';
 const titles = {  
     '/': 'Алина Воронкова',  
     '/ony': "Ony",  
-    '/form-redesign': 'Редизайн формы',  
-    '/dailyui': 'Daily UI',  
-    '/issue-tracker': 'Трекер задач',  
-    '/shop-constructor': 'Конструктор магазинов',  
-    '/baikal': 'Байкал',  
-    '/knowledge-base': 'База знаний',  
-    '/profile': 'Профиль пользователя',  
+    '/candidate-lk': 'Личный кабинет кандидата',  
+    '/daily-ui': 'Daily UI',  
+    '/pocketbook': 'Pocketbook',  
+    '/redesign': 'Редизайн основных страниц',  
+    '/client-lk': 'Личный кабинет клиента',  
+    '/shop-constructor': 'Конструктор интернет-магазинов',  
 };  
 
 const TitleHandler = () => {  

@@ -60,7 +60,7 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
         animate={{ opacity: isFooterInView ? 0 : 1, }}
         transition={{ duration: 0.3 }}
         className={styles.navigation__buttonGroup}>
-        {isOpen && (
+        {isOpen && currentProject.anchors.length != 0 && (
           <motion.div 
             className={styles.navigation__links}
             initial={{opacity: isDown('sm') ? 0 : 1 , y: 0, }}

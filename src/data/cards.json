@@ -5,10 +5,11 @@
     "type": "Ony",  
     "title": "Ony – твой психолог",  
     "image": "ony/ony-main.webp",  
+    "imageMobile": "ony/ony-main-mobile.webp",  
     "chipsBlack": true
   },  
   {  
-    "route": "?modal=open",  
+    "route": "candidate-lk",  
     "size": "large",  
     "type": "RedRocket",
     "title": "Личный кабинет кандидата",  
@@ -16,14 +17,14 @@
     "chipsBlack": true
   },  
   {  
-    "route": "daily-ui",  
+    "route": "shop-constructor",  
     "size": "small",  
-    "type": "DailyUI",  
-    "image": "daily-ui/daily-ui-main.webp",  
+    "type": "Nexus",  
+    "image": "shop-constructor/shop-constructor-main.webp" ,
     "chipsBlack": true
-  },  
+  },
   {  
-    "route": "premium-water",  
+    "route": "?modal=open",  
     "size": "large",  
     "type": "NDA",  
     "title": "Интернет-магазин премиальной воды",  
@@ -33,7 +34,7 @@
     "nda": true
   },  
   {  
-    "route": "?modal=open",  
+    "route": "pocketbook",  
     "size": "large",  
     "type": "Pocketbook",  
     "title": "Интернет-магазин Pocketbook",  
@@ -46,6 +47,7 @@
     "type": "RedRocket",  
     "title": "Редизайн основных страниц",  
     "image": "redesign/redesign-main.webp",
+    "imageMobile": "redesign/redesign-main-mobile.webp",  
     "chipsBlack": true
   },  
   {  
@@ -57,10 +59,10 @@
     "chipsBlack": true
   },  
   {  
-    "route": "shop-constuctor",  
+    "route": "daily-ui",  
     "size": "small",  
-    "type": "Nexus",  
-    "image": "shop-constructor/shop-constructor-main.webp" ,
+    "type": "DailyUI",  
+    "image": "daily-ui/daily-ui-main.webp",  
     "chipsBlack": true
-  }  
+  }
 ]

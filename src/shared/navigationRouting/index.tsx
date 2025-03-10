@@ -5,42 +5,32 @@ const routes = [
   {
     route: "/ony",
     name: "Ony",
-    image: "Preview/ony-preview.webp",
+    image: "preview/ony-preview.webp",
   },
   {
-    route: "/form-redesign",
-    name: "Редизайн, увеличивший конверсию",
-    image: "Preview/form-preview.webp",
+    route: "/candidate-lk",
+    image: "preview/candidate-lk-preview.webp",
   },
   {
-    route: "/dailyui",
-    name: "DailyUI",
-    image: "Preview/daily-preview.webp",
+    route: "/daily-ui",
+    image: "preview/daily-ui-preview.webp",
   },
-  // {
-  //   route: "/issue-tracker",
-  //   name: "Клиентский модуль в трекере задач",
-  //   image: "Preview/form-preview.webp",
-  // },
+  {
+    route: "/pocketbook",
+    image: "preview/pocketbook-preview.webp",
+  },
+  {
+    route: "/redesign",
+    image: "preview/redesign-preview.webp",
+  },
+  {
+    route: "/client-lk",
+    name: "Корпоративная база знаний",
+    image: "preview/client-lk-preview.webp",
+  },
   {
     route: "/shop-constructor",
-    name: "Конструктор интернет-магазинов",
-    image: "Preview/shop-preview.webp",
-  },
-  {
-    route: "/baikal",
-    name: "Легенда Байкала",
-    image: "Preview/baikal-preview.webp",
-  },
-  // {
-  //   route: "/knowledge-base",
-  //   name: "Корпоративная база знаний",
-  //   image: "Preview/form-preview.webp",
-  // },
-  {
-    route: "/profile",
-    name: "Личный кабинет кандидата",
-    image: "Preview/profile-preview.webp",
+    image: "preview/shop-constructor-preview.webp",
   },
 ];
 

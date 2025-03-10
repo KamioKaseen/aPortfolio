@@ -15,7 +15,7 @@
         color: hsla(0, 0%, 100%, 0.36);
         font-family: "GeologicaLight";
         font-weight: 300;
-        font-size: 10rem;
+        font-size: 8rem;
         margin-left: 3rem;
         cursor: default;
     }
@@ -24,7 +24,7 @@
         color: $font-white;
         font-family: "GeologicaLight";
         font-weight: 600;
-        font-size: 10rem;
+        font-size: 8rem;
     }
 
     @media (max-width: 1440px) {
@@ -64,7 +64,7 @@
         grid-template-rows: repeat(8, fit-content);
         gap: 1rem;
         margin-top: 12.2rem;
-        padding: 5.9rem 2.8rem;
+        padding: 2.8rem;
         border-radius: 2.4rem;
         background-color: $bg-white;
 
@@ -150,19 +150,19 @@
     }
 
     .home__item1 {
-        order: 3;
-    }
-    .home__item2 {
         order: 1;
     }
-    .home__item3 {
-        order: 4;
-    }
-    .home__item4 {
+    .home__item2 {
         order: 2;
     }
-    .home__item5 {
+    .home__item3 {
         order: 5;
+    }
+    .home__item4 {
+        order: 4;
+    }
+    .home__item5 {
+        order: 3;
     }
     .home__item6 {
         order: 6;

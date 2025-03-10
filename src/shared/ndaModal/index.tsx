@@ -43,6 +43,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
     e.preventDefault();
     const password = (e.target as HTMLFormElement).password.value;
 
+    // Только не вводите, ладно?
     if(password !== "505166") {
       setIsError(true)
     } else {

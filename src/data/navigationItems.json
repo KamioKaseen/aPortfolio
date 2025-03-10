@@ -9,7 +9,20 @@
         ],  
         "address": "#"  
     },  
-    "/form-redesign": {  
+    "/candidate-lk": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "hypothesesSolutions", "label": "Гипотезы и решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "#"  
+    },
+    "/pocketbook": {  
+        "anchors": [],  
+        "address": "https://pocketbook.ru"  
+    },
+    "/redesign": {  
         "anchors": [  
             {"id": "about", "label": "О проекте"},  
             {"id": "task", "label": "Задача"},  
@@ -20,6 +33,15 @@
         ],  
         "address": "#"  
     },  
+    "/client-lk": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "solutions", "label": "Решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "#"  
+    },
     "/shop-constructor": {  
         "anchors": [  
             {"id": "about", "label": "О проекте"},  
@@ -30,23 +52,5 @@
             {"id": "result", "label": "Результат"}  
         ],  
         "address": "#"  
-    },  
-    "/baikal": {  
-        "anchors": [  
-            {"id": "about", "label": "О проекте"},  
-            {"id": "task", "label": "Задача"},  
-            {"id": "solutions", "label": "Решения"},  
-            {"id": "result", "label": "Результат"}  
-        ],  
-        "address": "https://new.legendbaikal.ru/"  
-    },  
-    "/profile": {  
-        "anchors": [  
-            {"id": "about", "label": "О проекте"},  
-            {"id": "task", "label": "Задача"},  
-            {"id": "hypothesesSolutions", "label": "Гипотезы и решения"},  
-            {"id": "result", "label": "Результат"}  
-        ],  
-        "address": "#"  
-    }  
+    }
 }

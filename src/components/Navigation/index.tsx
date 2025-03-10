@@ -63,7 +63,7 @@ const Navigation = () => {
           </li>
 
           <li>
-            <a href="https://drive.google.com/file/d/1SuNP2SE_l5Ks4G76O0Ra-Wo_VHuF0IB0/view" target='_blank' rel="noopener noreferrer">
+            <a href="https://docs.google.com/document/d/1RYpjw79RMxLphci1BVQrnaw7TsHP2MMF14Mre9m0VtM/edit?tab=t.0" target='_blank' rel="noopener noreferrer">
               <Chips>Резюме</Chips>
             </a>
           </li>

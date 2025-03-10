@@ -10,6 +10,7 @@ const Card: FC<CardData> = ({
   type, 
   title, 
   image,
+  imageMobile,
   className = "", 
   size, 
   backgroundImage, 
@@ -27,6 +28,7 @@ const Card: FC<CardData> = ({
             <NdaLock className={styles.card__ndaIcon} />
           </div>
         }
+        
         {size != 'small' && 
           <p
             className={styles.card__name}
@@ -36,18 +38,25 @@ const Card: FC<CardData> = ({
           </p>
         }
         
-        <h2 className={classNames(styles.card__title, styles[`card--${size}__title`])} style={{color : chipsBlack ? 'black' : 'white'}} >
-          {title}
-        </h2>
-
-        {size === 'middle' 
-          ?
-          <div className={styles['card--middle__imageContainer']}>
-            <img className={styles[`card--${size}__image`]} src={image} alt="backdrop"/>
-          </div> 
-          :
-          <img className={styles[`card--${size}__image`]} src={image} alt="backdrop"/>   
+        {title &&
+          <h2 className={classNames(styles.card__title, styles[`card--${size}__title`])} style={{color : chipsBlack ? 'black' : 'white'}} >
+            {title}
+          </h2>
         }
+        
+
+        {image && 
+          (size === 'middle'
+            ?
+            <picture className={styles['card--middle__imageContainer']}>  
+              <source media="(max-width: 480px)" srcSet={imageMobile} />  
+              <img className={styles[`card--${size}__image`]}  src={image} alt="backdrop"/>   
+            </picture> 
+            :
+            <img className={styles[`card--${size}__image`]} src={image} alt="backdrop"/>
+          )
+        }
+        
       </Link>
   );
 };

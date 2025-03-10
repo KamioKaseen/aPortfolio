@@ -9,11 +9,15 @@ const DailyUI: FC = () => {
   return (
     <>
       <Header 
-        backgroundImage='url(DailyUI/dailyUI-header.webp)'
+        backgroundImage='url(daily-ui/daily-ui-header.webp)'
       />
     
       <main className='work'>
-        <Image image='DailyUI/dailyUI-content.webp'/>
+        <Image image='daily-ui/daily-ui-login.webp'/>
+        <Image image='daily-ui/daily-ui-social-network.webp'/>
+        <Image image='daily-ui/daily-ui-music.webp'/>
+        <Image image='daily-ui/daily-ui-calculator.webp'/>
+
         <NavigationBar />
       </main>
       

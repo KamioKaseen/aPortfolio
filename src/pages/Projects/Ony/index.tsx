@@ -13,8 +13,8 @@ const Ony: FC = () => {
   return (
     <div>
       <Header 
-        image='Ony/ony-header.webp'
-        backgroundImage='url(Ony/mountain.webp)'
+        image='ony/ony-header.webp'
+        backgroundImage='url(ony/mountain.webp)'
       />
 
       <main className='work'>
@@ -36,7 +36,7 @@ const Ony: FC = () => {
           ]}
         />
           
-        <Image image='Ony/ony-double.webp'/>
+        <Image image='ony/ony-double.webp'/>
         <Content 
           id='#searchAnalysis'
           subTitle='Исследование и анализ'
@@ -58,7 +58,7 @@ const Ony: FC = () => {
             {text: 'Прототип пользователя – Мария, 32 года, офисный работник, страдающая от социальной тревожности. Её ключевая боль – трудности в поиске быстрых и эффективных методов расслабления.'}]}
         />
 
-        <Image image='Ony/ony-breath.webp'/>
+        <Image image='ony/ony-breath.webp'/>
         <Content 
           id='#jobStories'
           subTitle='Job Stories'
@@ -80,7 +80,7 @@ const Ony: FC = () => {
           ]}
         />
 
-        <Image image='Ony/ony-children.webp'/>
+        <Image image='ony/ony-children.webp'/>
         <Content 
           id='#cjm'
           subTitle='CJM'
@@ -94,7 +94,7 @@ const Ony: FC = () => {
           itemMaxWidth='52rem'
         />
 
-        <Image image='Ony/ony-shake.webp'/>
+        <Image image='ony/ony-shake.webp'/>
         <Content 
           id='#whatcanbe'
           subTitle='Что можно улучишть'

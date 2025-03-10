@@ -1,31 +1,29 @@
 import { useState } from 'react';
 import { Route, Routes, useLocation, useSearchParams } from 'react-router-dom';  
-import { AnimatePresence } from 'framer-motion';  
-import Home from '../../pages/Home';  
-import Ony from '../../pages/Projects/Ony';  
-import Form from '../../pages/Projects/FormRedesign';  
-import DailyUI from '../../pages/Projects/DailyUI';  
-import IssueTracker from '../../pages/Projects/IssueTracker';  
-import ShopConstructor from '../../pages/Projects/ShopConstructor';  
-import Baikal from '../../pages/Projects/LegengOfBaikal';  
-import KnowledgeBase from '../../pages/Projects/KnowledgeBase';  
-import Profile from '../../pages/Projects/Profile';  
-import MotionWrapper from '../../shared/motionWrapper';  
-import ScrollToTop from '../../shared/scrollToTop';
+import { AnimatePresence } from 'framer-motion';
 import NAV_ITEMS from '../../data/navigationItems.json';
 import NavigationWork from '../../shared/navigationWork';
+import MotionWrapper from '../../shared/motionWrapper';  
+import ScrollToTop from '../../shared/scrollToTop';
 import Modal from '../../shared/ndaModal';
+import Home from '../../pages/Home';  
+import Ony from '../../pages/Projects/Ony';  
+import CandidateLK from '../../pages/Projects/СandidateLK';
+import DailyUI from '../../pages/Projects/DailyUI';  
+import Pocketbook from '../../pages/Projects/Pocketbook';
+import Redesign from '../../pages/Projects/Redesign';
+import ClientLK from '../../pages/Projects/ClientLK';
+import ShopConstructor from '../../pages/Projects/ShopConstructor';
 
 const routes = [  
     { path: "/", element: <Home /> },  
     { path: "/ony", element: <Ony /> },  
-    { path: "/form-redesign", element: <Form /> },  
-    { path: "/dailyui", element: <DailyUI /> },  
-    { path: "/issue-tracker", element: <IssueTracker /> },  
+    { path: "/candidate-lk", element: <CandidateLK /> },  
+    { path: "/daily-ui", element: <DailyUI /> },  
+    { path: "/pocketbook", element: <Pocketbook /> },  
+    { path: "/redesign", element: <Redesign /> },  
+    { path: "/client-lk", element: <ClientLK /> },  
     { path: "/shop-constructor", element: <ShopConstructor /> },  
-    { path: "/baikal", element: <Baikal /> },  
-    { path: "/knowledge-base", element: <KnowledgeBase /> },  
-    { path: "/profile", element: <Profile /> },  
 ];  
 
 const AnimatedRoutes = () => {  

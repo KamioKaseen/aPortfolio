@@ -7,6 +7,7 @@ export interface CardData {
   type: string;
   title?: string;
   image?: string;
+  imageMobile?: string;
   backgroundImage?: string;
   phoneLarge?: string;
   backdrop?: string;

@@ -9,10 +9,19 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    cursor: pointer;
+    transition: transform .4s ease-in-out;
+
+    &:hover {  
+        transform: scale(0.98);
+        cursor: pointer;
+    }  
 
     @media (max-height: 768px) and (orientation: landscape) {
         height: auto;
+    }
+
+    @media (max-width: 768px) {
+        gap: 1rem;
     }
 
     &__name {
@@ -20,7 +29,7 @@
         margin-top: 3rem;
         margin-left: 3rem;
         width: fit-content;
-        padding: 2.4rem 4.4rem;
+        padding: 1.5rem 3.2rem;
         border-radius: 10rem;
         background-color: $bg-card-name;
         color: $font-white;
@@ -34,8 +43,8 @@
         }
 
         @media (max-width: 768px) {
-            margin-top: 2rem;
-            margin-left: 2rem;
+            margin-top: 1.5rem;
+            margin-left: 1.5rem;
             font-size: 1.6rem;
             padding: .8rem 1.6rem;
         }
@@ -55,17 +64,17 @@
         }
 
         @media (max-width: 990px) {
-            width: 80%;
             font-size: 4rem;
         }
 
         @media (max-width: 768px) {
-            margin-left: 2rem;
+            margin-left: 1.5rem;
             font-size: 4rem;
         }
 
         @media (max-width: 480px) {
-            font-size: 2.5rem;
+            width: 90%;
+            font-size: 2rem;
         }
 
         @media (max-height: 768px) and (orientation: landscape) {
@@ -111,11 +120,15 @@
   }
   
 .card--small {
-    display: grid;
-    place-content: center;
-    height: stretch;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+   
     &__image {
+        width: 65%;
         object-fit: cover;
     }
 }
@@ -125,15 +138,27 @@
         display: grid;
         place-items: center;
         flex: 1;
+
+        @media (max-width: 480px) {
+            margin-top: 3rem;
+        }
     }
 
     &__image {
         width: 85%;
         object-fit: contain;
 
+        @media (max-width: 1280px) {
+            width: 100%;
+        }
+
         @media (max-width: 768px) {
             width: 55%;
             padding-bottom: 2rem;
+        }
+
+        @media (max-width: 480px) {
+            padding-bottom: 0;
         }
     }
 }

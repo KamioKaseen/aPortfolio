@@ -12,8 +12,8 @@ const ShopConstructor: FC = () => {
   return (
     <>
       <Header 
-        image='Shop-constructor/constructor-header.webp'
-        // backgroundColor='bg-purple'
+        image='shop-constructor/shop-constructor-header.webp'
+        backgroundColor='bg-gray'
       />
     
       <main className='work'>
@@ -28,7 +28,7 @@ const ShopConstructor: FC = () => {
           ]}
         />
 
-        <Image image='Shop-constructor/constructor-content.webp'/>
+        <Image image='shop-constructor/shop-constructor-content.webp' />
         <Content
           id='#task'
           subTitle='Задача'
@@ -65,7 +65,7 @@ const ShopConstructor: FC = () => {
           bodyText={[{text: 'Поскольку проект был экспериментальным для студии, мы приняли решение сосредоточиться на разработке продукта для одного целевого сегмента на этапе MVP — представителей малого и среднего бизнеса.'}]}
         />
 
-        <Image image='Shop-constructor/constructor-catalog.webp'/>
+        <Image image='shop-constructor/shop-constructor-catalog.webp'/>
         <Content
           bodyText={[
             {text: 'Для создания MVP мы провели тщательный анализ интернет-магазинов, которые подходят для нашей целевой аудитории. Это помогло выделить ключевые блоки и функции, которые пользователи используют чаще всего.'},
@@ -73,7 +73,6 @@ const ShopConstructor: FC = () => {
           ]}
         />
 
-        <Image image='Shop-constructor/constructor-color.webp'/>
         <Content
           id='#result'
           subTitle='Результат'
@@ -87,7 +86,6 @@ const ShopConstructor: FC = () => {
           ]}
         />
 
-        <Image image='Shop-constructor/constructor-head.webp'/>
         <NavigationBar />
       </main>
     </>
@@ -95,9 +93,3 @@ const ShopConstructor: FC = () => {
 }
 
 export default ShopConstructor;
-
-// const pageVariants = {
-//   initial: { opacity: 1, y: "100%" }, // Начинает внизу
-//   animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } }, // Поднимается плавно
-//   exit: { opacity: 0, y: "100%" }, // Начинает внизу
-// };

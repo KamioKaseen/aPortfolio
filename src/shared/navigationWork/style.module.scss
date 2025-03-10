@@ -4,11 +4,10 @@
     justify-content: center;
     gap: 1.2rem;
     position: fixed;
-    bottom: 0;
+    bottom: .6rem;
     left: 50%;
     transform: translate(-50%, 0);
     
-
     @media (max-width: 768px) {
         width: 80%;
     }
@@ -33,14 +32,14 @@
         display: grid;
         place-items: center;
         height: 5.2rem;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(223, 223, 233, 0.9);
         border-radius: 2.4rem;
         font-family: 'GeologicaExtraLight';
         font-size: 1.8rem;
         font-weight: 300;
         line-height: 3rem;
         letter-spacing: .1rem; 
-        color: $font-white;
+        color: $font-black;
     }
 
     &__links {
@@ -49,7 +48,7 @@
         justify-content: center;
         gap: 3.6rem;
         border-radius: 5.6rem;
-        background-color: rgba(220, 211, 235, .85);
+        background-color: rgba(230, 230, 239, .9);
         color: $font-black; 
 
         @media (max-width: 1280px) {
@@ -57,9 +56,10 @@
         }
 
         @media (max-width: 768px) {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(223, 223, 233, 0.9);
             border-radius: 2.4rem;
             flex-direction: column;
+            color: $font-black;
         }
     }
 
@@ -82,7 +82,7 @@
 
         @media (max-width: 768px) {
             font-size: 1.9rem;
-            color: $font-white;
+            color: $font-black;
         }
     }
 

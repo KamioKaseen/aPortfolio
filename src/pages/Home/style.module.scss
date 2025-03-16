@@ -68,6 +68,7 @@
         background-color: $bg-white;
       
         @media (max-width: 768px) {
+            margin-top: 6.2rem;
             padding: 2rem;
             gap: 2rem;
         }

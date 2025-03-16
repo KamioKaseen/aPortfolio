@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
 import Table from '../components/Table';
-import NavigationBar from '../../../shared/navigationRouting';
 import { useBreakpoints } from '../../../utils/use-breackpoints';
 import tables from '../../../data/tableOny.json';
 

@@ -31,7 +31,7 @@ const Card: FC<CardData> = ({
 
               {route === 'ony' 
               ?
-              <source media="(max-width: 480px)" height={300} srcSet={imageMobile} /> :
+              <source media="(max-width: 480px)" height={250} srcSet={imageMobile} /> :
               <source media="(max-width: 768px)" srcSet={imageMobile} />  
               }
                

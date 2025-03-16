@@ -4,14 +4,14 @@ import { AnimatePresence } from 'framer-motion';
 import MotionWrapper from '../../shared/motionWrapper';  
 import ScrollToTop from '../../shared/scrollToTop';
 import Home from '../../pages/Home';  
-
+import ClientLK from '../../pages/Projects/ClientLK';
 
 const routes = [  
     { path: "/", element: <Home /> },  
     // { path: "/ony", element: <Ony /> },  
     // { path: "/candidate-lk", element: <CandidateLK /> },  
     // { path: "/daily-ui", element: <DailyUI /> },  
-    // { path: "/client-lk", element: <ClientLK /> },  
+    { path: "/client-lk", element: <ClientLK /> },  
 ];  
 
 const AnimatedRoutes = () => {  

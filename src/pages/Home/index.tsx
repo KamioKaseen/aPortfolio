@@ -24,6 +24,13 @@ const Home = () => {
             {...card}
           />
         ))}
+
+        <div className={styles.home__otherWorks}>
+          {/* <img className={styles.home__item1} src="home-page/social-network.png" alt="" />
+          <img className={styles.home__item2} src="home-page/calculator.png" alt="" /> */}
+          <img className={styles.home__item3} src="home-page/auth.png" alt="" />
+          <img className={styles.home__item4} src="home-page/music.png" alt="" />
+        </div>
       </div>
     </div>
   );

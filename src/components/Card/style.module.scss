@@ -9,26 +9,67 @@
     background-size: cover;
     background-color: $bg-blue;
 
+    @media (max-width: 768px) {
+        align-items: end;
+        padding: 0;
+        padding-left: 3.2rem;
+        padding-top: 3.2rem;
+    }
+
+
+
     &__content {
         display: flex;
         flex-direction: column;
         flex: 1;
+        padding: 5.4rem 5.4rem 0 5.4rem;
+
+        @media (max-width: 768px) {
+            padding: 0;
+            // padding-left: 2.2rem;
+            // padding-top: 2.2rem;
+        }
     }
 
     &__title {
-        margin-top: 8.2rem;
+        margin-top: 4.2rem;
         z-index: 2;
         width: 90%;
         font-size: 5.2rem;
         font-family: 'GeologicaLight';
         font-weight: 600;
         color: $font-black;
+
+        @media (max-width: 1280px) {
+            margin-top: 2.2rem;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 4.2rem;
+        }
+
+        @media (max-width: 480px) {
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__imageContainer {
+        display: flex;
+        flex: 1;
     }
 
     &__image {
         max-width: 146rem;
         margin-top: 6.4rem;
         width: 100%;
+        height: 10%;
+        object-fit: contain;
+
+        @media (max-width: 480px) {
+            margin-top: 2.6rem;
+            font-size: 2.5rem;
+        }
     }
 }
 

@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';  
 import { AnimatePresence } from 'framer-motion';
+import NAV_ITEMS from '../../data/navigationItems.json';
 import MotionWrapper from '../../shared/motionWrapper';  
 import ScrollToTop from '../../shared/scrollToTop';
 import Home from '../../pages/Home';  
 import ClientLK from '../../pages/Projects/ClientLK';
 import CandidateLK from '../../pages/Projects/СandidateLK';
+import Ony from '../../pages/Projects/Ony';
+import NavigationWork from '../../shared/navigationWork';
 
 const routes = [  
     { path: "/", element: <Home /> },  
     { path: "/client-lk", element: <ClientLK /> },  
-    // { path: "/ony", element: <Ony /> },  
+    { path: "/ony", element: <Ony /> },  
     { path: "/candidate-lk", element: <CandidateLK /> },  
     
 ];  
@@ -35,7 +38,8 @@ const AnimatedRoutes = () => {
                   <MotionWrapper onAnimationComplete={handleAmination}>
                     <ScrollToTop/>
                     {element}
-                  </MotionWrapper>
+                    <NavigationWork navigationItems={NAV_ITEMS} isVisible={isAnimationComplete} />              
+                    </MotionWrapper>
                 }   
               >
               </Route> 

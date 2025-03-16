@@ -6,7 +6,6 @@ import { scrollToId } from "../../utils/scrollToId";
 import { useBreakpoints } from "../../utils/use-breackpoints";
 import ArrowIcon from "../../icons/arrowIcon";
 import { motion } from "framer-motion";
-import useElementInView from "../../utils/use-elementInView";
 
 export interface NavItem {
   id: string;
@@ -22,7 +21,6 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
   const [isOpen, setIsOpen] = useState(true);
   const { pathname } = useLocation();
   const { isDown } = useBreakpoints();
-  const isFooterInView = useElementInView("navRouting");
 
   const currentProject = navigationItems[pathname];
   const website = currentProject?.address;
@@ -57,8 +55,6 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
       }}
     >
       <motion.div 
-        animate={{ opacity: isFooterInView ? 0 : 1, }}
-        transition={{ duration: 0.3 }}
         className={styles.navigation__buttonGroup}>
         {isOpen && currentProject.anchors.length != 0 && (
           <motion.div 
@@ -110,8 +106,6 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
             styles.navigation__siteLink,
             styles.navigation__link
           )}
-          animate={{ opacity: isFooterInView ? 0 : 1, }}
-          transition={{ duration: 0.3 }}
         >
           {!isDown("md") ? "Посетить сайт" : <ArrowIcon className={styles.navigation__icon} />}
         </motion.a>

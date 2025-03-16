@@ -1,0 +1,30 @@
+{  
+    "/ony": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "searchAnalysis", "label": "Исследование и анализ"},  
+            {"id": "jobStories", "label": "Job Stories"},  
+            {"id": "cjm", "label": "CJM"},  
+            {"id": "whatcanbe", "label": "Что можно улучшить"}  
+        ],  
+        "address": "#"  
+    },  
+    "/candidate-lk": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "hypothesesSolutions", "label": "Гипотезы и решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "#"  
+    },
+    "/client-lk": {  
+        "anchors": [  
+            {"id": "about", "label": "О проекте"},  
+            {"id": "task", "label": "Задача"},  
+            {"id": "solutions", "label": "Решения"},  
+            {"id": "result", "label": "Результат"}  
+        ],  
+        "address": "#"  
+    }
+}

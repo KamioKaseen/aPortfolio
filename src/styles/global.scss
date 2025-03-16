@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'GeologicaLight';
+  src: url('../assets/fonts/Geologica-Light.woff2') format('woff2');
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'GeologicaExtraLight';
+  src: url('../assets/fonts/Geologica-Thin.woff2') format('woff2');
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-display: swap; 
+}
+
+::-webkit-scrollbar {  
+  width: 1.5rem;
+  height: .5rem;    
+}  
+
+::-webkit-scrollbar-thumb {  
+  background: $font-gray; 
+  border-radius: 6px;  
+}  
+
+::-webkit-scrollbar-thumb:hover {  
+  background: #555;
+}  
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $bg-black;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-black {  
+  background-color: $bg-black;  
+}  
+
+.bg-white {  
+  background-color: $bg-white;  
+}  
+
+.bg-gray {  
+  background-color: $bg-gray;  
+}  
+
+.bg-blue {  
+  background-color: $bg-blue;  
+}  
+
+.bg-dark-blue {  
+  background-color: $bg-dark-blue;  
+}  
+
+// .bg-purple {  
+//   background-color: $bg-purple;  
+// }  
+
+.bg-chips {  
+  background-color: $bg-chips;  
+}  
+
+.font-gray {  
+  color: $font-gray;  
+}  
+
+.font-white {  
+  color: $font-white;  
+}  
+
+.font-black {  
+  color: $font-black;  
+}  
+
+.font-inter {
+  font-family: 'Inter';
+}
+

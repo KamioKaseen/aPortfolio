@@ -1,0 +1,58 @@
+$bg-black: rgb(21, 21, 21);
+$bg-white: #FFFFFF;
+$bg-gray: rgb(247, 247, 249);
+$bg-blue: #EDF3FD;
+$bg-dark-blue: #B9DFF3;
+$bg-pink: #FBE9F4;
+$bg-green: #EEF3E4;
+$bg-chips: rgba(53, 53, 53, 0.411);
+$bg-card-name: rgba(255, 255, 255, .7);
+
+$font-gray: rgba(255, 255, 255, 0.36);
+$font-white: #FFFFFF;
+$font-black: #000000;
+
+.bg-black {  
+  background-color: $bg-black;  
+}  
+  
+.bg-white {  
+  background-color: $bg-white;  
+}  
+
+.bg-gray {  
+  background-color: $bg-gray;  
+}  
+
+.bg-blue {  
+  background-color: $bg-blue;  
+}  
+
+.bg-dark-blue {  
+  background-color: $bg-dark-blue;  
+}  
+
+.bg-green {  
+  background-color: $bg-green;  
+}  
+
+.bg-chips {  
+  background-color: $bg-chips;  
+}  
+
+.font-gray {  
+  color: $font-gray;  
+}  
+
+.font-white {  
+  color: $font-white;  
+}  
+
+.font-black {  
+  color: $font-black;  
+}  
+
+.font-inter {
+  font-family: 'Inter';
+}
+

@@ -1,0 +1,70 @@
+
+.home {
+    margin-top: 16rem;
+    width: 100%;
+
+    @media (max-width: 1280px) {
+        margin-top: 13rem;
+    } 
+    
+    @media (max-width: 768px) {
+        margin-top: 10rem;
+    } 
+
+    &__title {
+        color: hsla(0, 0%, 100%, 0.36);
+        font-family: "GeologicaLight";
+        font-weight: 300;
+        font-size: 8rem;
+        margin-left: 3rem;
+        cursor: default;
+    }
+
+    &__subtitle {
+        color: $font-white;
+        font-family: "GeologicaLight";
+        font-weight: 600;
+        font-size: 8rem;
+    }
+
+    @media (max-width: 1440px) {
+        &__title,
+        &__subtitle {
+          font-size: 7rem;
+        }
+      }
+      
+      @media (max-width: 1024px) {
+        &__title,
+        &__subtitle {
+          font-size: 5rem;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        &__title {
+          margin-left: 2rem;
+        }
+        &__title,
+        &__subtitle {
+          font-size: 3.5rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        &__title,
+        &__subtitle {
+          font-size: 2.4rem;
+        }
+      }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 5.4rem;
+        margin-top: 12.2rem;
+        padding: 5.4rem;
+        border-radius: 2.4rem;
+        background-color: $bg-white;
+    }
+}

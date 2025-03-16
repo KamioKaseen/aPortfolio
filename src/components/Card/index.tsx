@@ -8,6 +8,7 @@ const Card: FC<CardData> = ({
   route, 
   title, 
   image,
+  imageMobile,
   backgroundImage
 }) => {
   return (
@@ -24,7 +25,10 @@ const Card: FC<CardData> = ({
           }
 
           {image && 
-            <img className={styles.card__image} src={image}></img>
+            <picture className={styles.card__imageContainer}>  
+              <source media="(max-width: 768px)" srcSet={imageMobile} />  
+              <img className={styles.card__image} src={image} alt={title}></img>
+            </picture> 
           }
         </div>
       </Link>

@@ -2,18 +2,20 @@
   {  
     "route": "client-lk",  
     "title": "Личный кабинет клиента",  
-    "image": "home-page/client-lk-main.png" 
+    "image": "home-page/client-lk-main.png",
+    "imageMobile": "home-page/client-lk-mobile-main.png"
   },
   {  
     "route": "ony",  
     "title": "Ony – твой психолог",  
     "image": "home-page/ony-main.png",  
-    "imageMobile": "home-page/ony-main-mobile.png",
+    "imageMobile": "home-page/ony-mobile-main.png",
     "backgroundImage": "url(home-page/ony-main-bg.png)"
   },  
   {  
     "route": "candidate-lk",  
     "title": "Личный кабинет кандидата",  
-    "image": "home-page/candidate-lk-main.png"
+    "image": "home-page/candidate-lk-main.png",
+    "imageMobile": "home-page/candidate-lk-mobile-main.png"
   }
 ]

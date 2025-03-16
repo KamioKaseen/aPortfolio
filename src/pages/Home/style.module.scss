@@ -74,14 +74,18 @@
     }
 
     &__otherWorks {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+    } 
     }
 
     &__image {
-      width: 100%;
-      object-fit: contain;
+        width: 100%;
+        object-fit: contain;
     }
     
 }

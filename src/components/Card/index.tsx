@@ -14,10 +14,12 @@ const Card: FC<CardData> = ({
   return (
       <Link 
         to={route}
-        className={styles.card}
         style={{backgroundImage: backgroundImage}}
+        className={`${styles.card} ${route === 'ony' ? styles['card--border']: ''}`}
       >
-        <div className={styles.card__content}>
+        <div 
+          className={styles.card__content }
+        >
           {title &&
             <h2 className={classNames(styles.card__title)}>
               {title}
@@ -26,7 +28,13 @@ const Card: FC<CardData> = ({
 
           {image && 
             <picture className={styles.card__imageContainer}>  
+
+              {route === 'ony' 
+              ?
+              <source media="(max-width: 480px)" height={300} srcSet={imageMobile} /> :
               <source media="(max-width: 768px)" srcSet={imageMobile} />  
+              }
+               
               <img className={styles.card__image} src={image} alt={title}></img>
             </picture> 
           }

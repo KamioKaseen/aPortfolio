@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useLocation } from "react-router-dom";
 import { scrollToId } from "../../utils/scrollToId";
 import { useBreakpoints } from "../../utils/use-breackpoints";
+import { useFooterVisibility } from "../../utils/useFooterVisibility";
 import ArrowIcon from "../../icons/arrowIcon";
 import { motion } from "framer-motion";
 
@@ -19,6 +20,7 @@ export interface NavigationWorkProps {
 
 const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible }) => {
   const [isOpen, setIsOpen] = useState(true);
+  const shouldHide = useFooterVisibility(100);
   const { pathname } = useLocation();
   const { isDown } = useBreakpoints();
 
@@ -43,11 +45,10 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
     <motion.div
       className={styles.navigation}
       initial={{ y: 90, x: '-50%' }}
-      animate={{y: isVisible ? -10 : 0 }}
-      exit={{ y: 90, }}
+      animate={{ y: isVisible && !shouldHide ? -10 : 90 }}
+      exit={{ y: 90 }}
       transition={{
-        duration: 1,
-        delay: .2,
+        duration: 0.3,
         ease: "easeInOut",
         type: "spring",
         stiffness: 100,

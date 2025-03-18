@@ -39,6 +39,11 @@ const CandidateLK = () => {
         <Content 
           bodyText={[{text: 'Проверили гипотезу проведя интервью с кандидатами, которые прошли отбор в компанию.'}]}
         />
+
+        <Image image='client-lk/ui-kit.png' />
+        <Content 
+          bodyText={[{text: 'Во время работы я придерживалась гайдлайнов и UI-кит.'}]}
+        />
         
         <Content 
           id='#result'
@@ -51,9 +56,7 @@ const CandidateLK = () => {
           ]}
         />
 
-        <Content 
-          bodyText={[{text: 'Во время работы я придерживалась гайдлайнов и UI-кит студии.'}]}
-        />
+        
 
         {/* <NavigationBar /> */}
       </main>

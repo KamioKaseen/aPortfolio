@@ -43,6 +43,13 @@ const ClientLK = () => {
           ]}
         />
 
+        <Image image='client-lk/ui-kit.png' />
+        <Content 
+          bodyText={[
+           {text: 'Во время работы использовалась дизайн-система.'},
+          ]}
+        />
+
         <Content 
           id='#result'
           subTitle='Результат'

@@ -1,10 +1,10 @@
 .header {
-  margin: 0 23rem;
   display: flex;
   height: 40rem;
+  overflow: hidden;
 
   &__title {
-    margin-top: 8.6rem;
+    margin-top: 6rem;
     width: 50%;
     font-size: 2rem;
     font-family: 'GeologicaExtraLight';
@@ -12,11 +12,16 @@
 
   &__works {
     display: flex;
-    align-items: end;
     width: 50%;
-    padding-left: 2rem;
-    border-left: .1rem $bg-gray solid;
+    height: 100%;
+    padding-left: 1rem;
+    border-left: .2rem $bg-gray solid;
     font-size: 10rem;
     font-family: 'GeologicaLight';
+  }
+
+  &__text {
+    align-self: flex-end;
+    line-height: 75%;
   }
 }

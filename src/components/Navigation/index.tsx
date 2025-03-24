@@ -1,8 +1,7 @@
 import styles from './styles.module.scss';
-import Chips from './../../shared/chips';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import BackButton from '../../shared/backButton';
+import { BackButton } from '@shared';
 
 export function Navigation () {
   const [showAlternateIcon, setShowAlternateIcon] = useState(false);
@@ -44,15 +43,13 @@ export function Navigation () {
           alt="Алина Воронкова"
         />
       )}
-    </Link>
+      </Link>
 
         <div className={styles.navigation__contacts}>
           <li>
             <a href="mailto:kisialin@gmail.com" target='_blank' rel="noopener noreferrer">
               <span className={styles.navigation__text}>
-                <Chips>
-                  kisialin@gmail.com
-                </Chips>
+                kisialin@gmail.com
               </span>
               
               <button className={styles.navigation__iconContainer}>
@@ -63,7 +60,7 @@ export function Navigation () {
 
           <li>
             <a href="https://docs.google.com/document/d/1RYpjw79RMxLphci1BVQrnaw7TsHP2MMF14Mre9m0VtM/edit?tab=t.0" target='_blank' rel="noopener noreferrer">
-              <Chips>Резюме</Chips>
+              Резюме
             </a>
           </li>
         </div>

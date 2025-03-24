@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 import { scrollToId } from "../../utils/scrollToId";
 import { useBreakpoints } from "../../utils/use-breackpoints";
 import { useFooterVisibility } from "../../utils/useFooterVisibility";
-import ArrowIcon from "../../icons/arrowIcon";
 import { motion } from "framer-motion";
 
 export interface NavItem {
@@ -110,7 +109,7 @@ export function NavigationProject ({ navigationItems, isVisible }: NavigationPro
             styles.navigation__link
           )}
         >
-          {!isDown("md") ? "Посетить сайт" : <ArrowIcon className={styles.navigation__icon} />}
+          {/* {!isDown("md") ? "Посетить сайт" : <ArrowIcon className={styles.navigation__icon} />} */}
         </motion.a>
       )}
     </motion.div>

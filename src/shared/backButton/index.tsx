@@ -1,7 +1,7 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import styles from './style.module.scss';
 import { AnimatePresence, motion } from 'framer-motion';
-import LeftIcon from "../../icons/leftIcon";
+import LeftIcon from '@assets/icons/left.svg?react';
 import classNames from "classnames";
 
 interface BackButtonProps {
@@ -9,7 +9,7 @@ interface BackButtonProps {
   className?: string;
 }
 
-const BackButton: FC<BackButtonProps> = ({ onClick, className = '' }) => {
+export function BackButton ({ onClick, className = '' }: BackButtonProps) {
   const [hovered, setHovered] = useState(false);
   
   return (
@@ -35,6 +35,4 @@ const BackButton: FC<BackButtonProps> = ({ onClick, className = '' }) => {
     </button>
   );
 };
-
-export default BackButton;
 

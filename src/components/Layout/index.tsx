@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
-import Footer from '../Footer';
-import Navigation from '../Navigation';
+import { Navigation, Footer } from '@components';
 
-const Layout = ({ children }: { children: ReactNode }) => {  
+export function Layout({ children }: { children: ReactNode }) {  
   return (  
     <>  
       <div id="modal-root" />  
@@ -13,4 +12,3 @@ const Layout = ({ children }: { children: ReactNode }) => {
   );  
 };  
 
-export default Layout;  

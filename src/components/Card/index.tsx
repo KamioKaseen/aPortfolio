@@ -1,16 +1,15 @@
-import { FC } from "react";
 import styles from "./style.module.scss";
-import classNames from "classnames";
 import { Link } from "react-router-dom";
-import { CardData } from "../../types";
+import classNames from "classnames";
+import { CardData } from "@types";
 
-const Card: FC<CardData> = ({ 
+export function Card ({ 
   route, 
   title, 
   image,
   imageMobile,
   backgroundImage
-}) => {
+}: CardData) {
   return (
       <Link 
         to={route}

@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';  
-import { FC } from "react";  
 import styles from './style.module.scss';  
 import { motion } from 'framer-motion';  
+
 export interface MotionWrapperProps {  
   children: ReactNode;  
   onAnimationComplete: () => void;
 }  
 
-const MotionWrapper: FC<MotionWrapperProps> = ({ children, onAnimationComplete }) => {  
+export function MotionWrapper ({ children, onAnimationComplete }: MotionWrapperProps) {  
   return (  
     <>  
       <motion.div   

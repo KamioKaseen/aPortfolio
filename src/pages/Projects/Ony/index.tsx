@@ -1,12 +1,11 @@
-import { FC } from 'react';
 import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
 import Table from '../components/Table';
 import { useBreakpoints } from '../../../utils/use-breackpoints';
-import tables from '../../../data/tableOny.json';
+import { TABLE_ONY }from '@data';
 
-const Ony: FC = () => {
+export function Ony () {
   const { isDown } = useBreakpoints()
 
   return (
@@ -47,8 +46,8 @@ const Ony: FC = () => {
 
         {!isDown('sm') && <Table 
           draggable={true} 
-          rows={tables.tableOne.rows} 
-          columns={tables.tableOne.columns} 
+          rows={TABLE_ONY.tableOne.rows} 
+          columns={TABLE_ONY.tableOne.columns} 
           firstColumnWidth='40rem' 
           lastColumnWidth='100rem'
         />}
@@ -64,8 +63,8 @@ const Ony: FC = () => {
         />
         <Table 
           draggable={false} 
-          rows={tables.tableTwo.rows} 
-          columns={tables.tableTwo.columns} 
+          rows={TABLE_ONY.tableTwo.rows} 
+          columns={TABLE_ONY.tableTwo.columns} 
           itemMaxWidth='50rem'
         />
         <Content 
@@ -88,8 +87,8 @@ const Ony: FC = () => {
         />
         <Table 
           draggable={true} 
-          rows={tables.tableThree.rows} 
-          columns={tables.tableThree.columns}  
+          rows={TABLE_ONY.tableThree.rows} 
+          columns={TABLE_ONY.tableThree.columns}  
           itemMaxWidth='52rem'
         />
 
@@ -109,7 +108,4 @@ const Ony: FC = () => {
     </div>
   )
 }
-
-export default Ony;
-
 

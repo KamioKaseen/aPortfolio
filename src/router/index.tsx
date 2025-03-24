@@ -1,8 +1,6 @@
 import { HashRouter as Router, useLocation } from 'react-router-dom';
-import Layout from '../components/Layout';
-import NoiseBackground from '../background';
 import { useEffect } from 'react';
-import AnimatedRoutes from '../components/AnimatedRoutes';
+import { Layout, AnimatedRoutes } from '@components';
 
 const titles = {  
   '/': 'Алина Воронкова',  
@@ -25,8 +23,7 @@ const TitleHandler = () => {
 const AppRouter = () => {
   return (
     <Router>
-    <Layout>  
-      <NoiseBackground />  
+    <Layout> 
       <TitleHandler />  
       <AnimatedRoutes />
     </Layout>  

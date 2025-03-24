@@ -4,7 +4,7 @@ import Content from '../components/Content';
 import Image from '../components/Image';
 // import NavigationBar from '../../../shared/navigationRouting';
 
-const CandidateLK = () => {
+export function CandidateLK () {
   return (
     <>
       <Header backgroundColor='bg-blue' image='candidate-lk/candidate-header.png'/>
@@ -64,5 +64,4 @@ const CandidateLK = () => {
   )
 }
 
-export default CandidateLK;
 

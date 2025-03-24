@@ -18,7 +18,7 @@ const routes = [
   },
 ];
 
-const NavigationRouting = () => {
+export function NavigationRouting () {
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -64,5 +64,3 @@ const NavigationRouting = () => {
     </div>
   );
 };
-
-export default NavigationRouting;

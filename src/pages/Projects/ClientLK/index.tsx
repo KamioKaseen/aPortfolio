@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Content from '../components/Content';
 import Image from '../components/Image';
 
-const ClientLK = () => {
+export function ClientLK () {
   return (
     <>
       <Header backgroundColor='bg-blue' image='client-lk/client-header.png'/>

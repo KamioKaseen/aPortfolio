@@ -1,14 +1,9 @@
 import { useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';  
 import { AnimatePresence } from 'framer-motion';
-import NAV_ITEMS from '../../data/navigationItems.json';
-import MotionWrapper from '../../shared/motionWrapper';  
-import ScrollToTop from '../../shared/scrollToTop';
-import Home from '../../pages/Home';  
-import ClientLK from '../../pages/Projects/ClientLK';
-import CandidateLK from '../../pages/Projects/СandidateLK';
-import Ony from '../../pages/Projects/Ony';
-import NavigationWork from '../../shared/navigationWork';
+import { NAV_ITEMS } from '@data';
+import { MotionWrapper, NavigationProject, ScrollToTop } from '@shared';  
+import { Home, CandidateLK, Ony, ClientLK } from '@pages';  
 
 const routes = [  
     { path: "/", element: <Home /> },  
@@ -18,7 +13,7 @@ const routes = [
     
 ];  
 
-const AnimatedRoutes = () => {  
+export function AnimatedRoutes () {  
   const { pathname } =  useLocation()
   const location = useLocation();
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
@@ -38,7 +33,7 @@ const AnimatedRoutes = () => {
                   <MotionWrapper onAnimationComplete={handleAmination}>
                     <ScrollToTop/>
                     {element}
-                    <NavigationWork navigationItems={NAV_ITEMS} isVisible={isAnimationComplete} />              
+                    <NavigationProject navigationItems={NAV_ITEMS} isVisible={isAnimationComplete} />              
                     </MotionWrapper>
                 }   
               >
@@ -49,4 +44,3 @@ const AnimatedRoutes = () => {
   );  
 };  
 
-export default AnimatedRoutes;

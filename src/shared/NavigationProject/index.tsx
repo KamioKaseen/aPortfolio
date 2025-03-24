@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 import classNames from "classnames";
 import { useLocation } from "react-router-dom";
@@ -13,27 +13,29 @@ export interface NavItem {
   label: string;
 }
 
-export interface NavigationWorkProps {
+export interface NavigationProjectProps {
   navigationItems: Record<string, { anchors: NavItem[]; address?: string }>;
   isVisible: boolean;
 }
 
-const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible }) => {
+export function NavigationProject ({ navigationItems, isVisible }: NavigationProjectProps) {
   const [isOpen, setIsOpen] = useState(true);
   const shouldHide = useFooterVisibility(100);
   const { pathname } = useLocation();
   const { isDown } = useBreakpoints();
-
+  
   const currentProject = navigationItems[pathname];
   const website = currentProject?.address;
+  
+  const isMobile = isDown("md");
 
   useEffect(() => {
-    if (isDown("md")) {
+    if (isMobile) {
       setIsOpen(false);
     } else {
       setIsOpen(true);
     }
-  }, [isDown("md")]);
+  }, [isMobile]);
 
   const handleOpen = () => {
     setIsOpen((prev) => !prev);
@@ -115,4 +117,3 @@ const NavigationWork: FC<NavigationWorkProps> = ({ navigationItems, isVisible })
   );
 };
 
-export default NavigationWork;

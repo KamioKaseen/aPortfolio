@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import BackButton from '../../shared/backButton';
 
-const Navigation = () => {
+export function Navigation () {
   const [showAlternateIcon, setShowAlternateIcon] = useState(false);
   const {pathname} = useLocation();
   
@@ -70,6 +70,4 @@ const Navigation = () => {
       </ul>
     </nav>
   )
-}
-
-export default Navigation;
+};

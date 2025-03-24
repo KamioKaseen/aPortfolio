@@ -5,7 +5,20 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": "./",
+    "paths": {
+      "@pages": ["src/pages"],
+      "@components": ["src/components"],
+      "@shared": ["src/shared"],
+      "@icons": ["src/icons"],
+      "@styles": ["src/styles"],
+      "@router": ["src/router"],
+      "@assets": ["src/assets"],
+      "@types": ["src/types"],
+      "@utils": ["src/utils"],
+      "@data": ["src/data"]
+    }
   }
 }
 

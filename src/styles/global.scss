@@ -35,11 +35,14 @@
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
+}
+
+html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: $bg-black;
+  background-color: $bg-white;
 }
 
 button {
@@ -62,6 +65,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 146rem;
+  margin: 0 auto;
+}
+
 .bg-black {  
   background-color: $bg-black;  
 }  
@@ -81,10 +90,6 @@ a {
 .bg-dark-blue {  
   background-color: $bg-dark-blue;  
 }  
-
-// .bg-purple {  
-//   background-color: $bg-purple;  
-// }  
 
 .bg-chips {  
   background-color: $bg-chips;  

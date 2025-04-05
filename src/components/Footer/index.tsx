@@ -1,4 +1,6 @@
+import classNames from 'classnames';
 import style from './style.module.scss';  
+import UpIcon from '@assets/icons/arrow-up.svg?react';
 
 export function Footer () {  
   const scrollToTop = () => {  
@@ -9,18 +11,13 @@ export function Footer () {
   };  
 
   return (  
-    <footer className={style.footer}>  
-      <div className={style.footer__container}>  
-        <a href="https://dprofile.ru/alinapry" target='_blank' rel="noopener noreferrer">  
-          Diprofile
-        </a>  
-        <a href="https://t.me/noytox1c" target='_blank' rel="noopener noreferrer">  
-          Telegram 
-        </a>  
-        <button onClick={scrollToTop} className={style.footer__arrowContainer}>  
-        </button>  
-      </div>  
-      <p className={style.footer__copyright}>© 2025</p>  
+    <footer className={classNames(style.footer, 'container')}>  
+      <p className={style.footer__copyright}>© 2024</p>  
+
+      <button onClick={scrollToTop} className={style.footer__button}>
+        <UpIcon /> 
+        Наверх
+      </button>  
     </footer>  
   );  
 }  

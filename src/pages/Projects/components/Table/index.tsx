@@ -34,7 +34,7 @@ const Table: FC<TemplateProps> = ({ draggable, firstColumnWidth, itemMaxWidth, l
         whileHover={{ cursor: draggable ? "grabbing" : "default"}}
         className={styles.gridContainer__grid}
         style={firstColumnWidth ? tableCustomStyle : tableStyle}
-        >
+      >
         {columns.map((title, index) => (
           <div key={index} className={classNames(styles.gridContainer__title)}>
             {title}

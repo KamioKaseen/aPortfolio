@@ -1,6 +1,7 @@
 import { FC } from "react";
 import classNames from 'classnames';
 import styles from './style.module.scss';
+import Image from "../Image";
 
 export interface HeaderProps {
   image?: string;
@@ -17,13 +18,9 @@ const Header: FC<HeaderProps> = ({ image, video, backgroundImage, backgroundColo
       style={{backgroundImage: backgroundImage}}
 
     > 
-    {image && !video && 
-      <img 
-        className={styles.header__image} 
-        src={image} 
-        alt="header-img" 
-      />
-    }
+    
+    {image && <Image image={image}/>}
+    
     {video && 
     <div className={styles.header__container}>
       <video className={styles.header__video}  loop autoPlay muted>  

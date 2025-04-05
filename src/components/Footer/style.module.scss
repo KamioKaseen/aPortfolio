@@ -1,62 +1,34 @@
 .footer {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: start;
+    height: 18rem;
+    color: $font-black;
+    font-family: 'Inter';
+    font-size: 2rem;
     align-items: center;
-    height: 17rem;
-    color: white;
-    font-family: 'GeologicaLight';
-    font-size: 2.8rem;
-    font-weight: 300;
-    letter-spacing: .1rem;
 
     @media (max-width: 768px) {
-        height: 15rem;
-    } 
+        height: 8rem;
+    }
 
-    &__container {
+    // &::after {
+    //     position: absolute;
+    //     z-index: -1;
+    //     content: "";
+    //     height: 100%;
+    //     width: .2rem;
+    //     background-color: $bg-gray;
+    //     top: 0;
+    //     left: 50%;
+    //   }
+
+    &__button {
         display: flex;
-        gap: 2rem;
-
-        @media (max-width: 1280px) {
-            height: 4.48rem;
-            gap: 1rem;
-        }
+        gap: .8rem;
+        margin-left: 2.7rem;
+        font-size: inherit;
+        font-family: inherit;
     }
-
-    &__arrowContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 5.28rem;
-        background-color: $bg-chips;
-        color: $font-white;
-
-        &:hover {
-            background-color: $bg-white;
-            color: $font-black;
-            cursor: pointer;
-        }
-
-        @media (max-width: 1280px) {
-            width: 4.48rem;
-        } 
-    }
-
-    &__arrow {
-        width: 100%;
-        color: inherit;
-
-        @media (max-width: 1280px) {
-            height: 1.8rem;
-            width: 1.8rem;
-        } 
-    }
-
-    &__copyright {
-        margin-top: 2.2rem;
-        color: $font-gray;
-    }
-
-   
 }

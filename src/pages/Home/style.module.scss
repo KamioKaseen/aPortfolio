@@ -4,25 +4,16 @@
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 5.4rem;
-        padding: 4rem 5.4rem;
-        border-radius: 2.4rem;
+        margin-top: 4rem;
         background-color: $bg-white;
-    }
 
-    &__otherWorks {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-
-        @media (max-width: 768px) {
-          grid-template-columns: 1fr;
-    } 
+        @media (max-width: 567px) {
+            margin-top: 2rem;
+        }
     }
 
     &__image {
         width: 100%;
         object-fit: contain;
     }
-    
 }

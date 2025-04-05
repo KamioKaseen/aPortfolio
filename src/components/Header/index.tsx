@@ -10,9 +10,9 @@ export function Header () {
       </h1>
 
       <div className={styles.header__works}>
-        <p className={styles.header__text}>
-          МОИ РАБОТЫ.
-        </p>
+        <h2 className={styles.header__text}>
+          МОИ РАБОТЫ<span className={styles[`header__text--blue`]}>.</span>
+        </h2>
       </div>
     </header>
   )

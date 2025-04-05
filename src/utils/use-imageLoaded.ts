@@ -1,6 +1,6 @@
 import { useEffect, useState, RefObject } from 'react';
 
-function useImagesLoaded(ref: RefObject<HTMLElement>): boolean {
+export function useImagesLoaded(ref: RefObject<HTMLElement>): boolean {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -43,4 +43,3 @@ function useImagesLoaded(ref: RefObject<HTMLElement>): boolean {
   return loaded;
 }
 
-export default useImagesLoaded;

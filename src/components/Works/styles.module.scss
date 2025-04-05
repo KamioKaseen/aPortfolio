@@ -1,0 +1,80 @@
+.works {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'GeologicaLight';
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width: .2rem;
+    margin-top: 1.4rem;
+    background-color: $bg-gray;
+    top: 0;
+    left: 50%;
+  }
+
+  &__textContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 50%;
+
+    @media (max-width: 567px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__title {
+    margin-top: 9.5rem;
+    margin-left: 2.5rem;
+    order: 2;
+    
+    @media (max-width: 567px) {
+      margin-top: 5.4rem;
+      order: 1;
+    }
+  }
+
+  &__titleText {
+    font-size: 8rem;
+
+    @media (max-width: 1440px) {
+      font-size: calc( (100vw - 30rem)/15);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-self: flex-end;
+    gap: 3rem;
+    padding-top: 35rem;
+    font-size: 2rem;
+    order: 1;
+
+    @media (max-width: 992px) {
+      padding-top: 17rem;
+    }
+
+    @media (max-width: 567px) {
+      padding-top: 8rem;
+      order: 2;
+    }
+  }
+
+  &__contactsText {
+    @media (max-width: 992px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__sliderContainer {
+    height: 50%;
+  }
+}

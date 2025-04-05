@@ -1,11 +1,10 @@
 import styles from "./style.module.scss";
 import { Link } from "react-router-dom";
-import classNames from "classnames";
 import { CardData } from "@types";
+import classNames from "classnames";
 
 export function Card ({ 
   route, 
-  title, 
   image,
   imageMobile,
   backgroundImage
@@ -14,33 +13,21 @@ export function Card ({
       <Link 
         to={route}
         style={{backgroundImage: backgroundImage}}
-        className={`${styles.card} ${route === 'ony' ? styles['card--border']: ''}`}
+        className={styles.card}
       >
         <div 
-          className={styles.card__content }
+          className={classNames(styles.card__content, 'container') }
+  
         >
-          {title &&
-            <h2 className={classNames(styles.card__title)}>
-              {title}
-            </h2>
-          }
-
           {image && 
             <picture className={styles.card__imageContainer}>  
-
-              {route === 'ony' 
-              ?
-              <source media="(max-width: 480px)" height={250} srcSet={imageMobile} /> :
               <source media="(max-width: 768px)" srcSet={imageMobile} />  
-              }
-               
-              <img className={styles.card__image} src={image} alt={title}></img>
+            
+              <img width={1620} className={styles.card__image} src={image}></img>
             </picture> 
           }
         </div>
       </Link>
   );
 };
-
-export default Card;
 

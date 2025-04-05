@@ -65,10 +65,25 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  all: unset; 
+}
+
 .container {
   width: 100%;
   max-width: 146rem;
   margin: 0 auto;
+  padding: 0 4rem;
+
+  // @media (max-width: 768px) {
+  //   padding-left: 4rem;
+  //   padding-right: 0;
+  // }
+
+  @media (max-width: 480px) {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
 }
 
 .bg-black {  

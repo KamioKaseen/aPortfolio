@@ -14,12 +14,9 @@ export function Home() {
         {cardData.map((card, index) => (
           <Card key={index} {...card} />
         ))}
-
-        <div className={styles.home__otherWorks}>
-          <img className={styles.home__item3} src="home-page/auth.png" alt="" />
-          <img className={styles.home__item4} src="home-page/music.png" alt="" />
-        </div>
       </div>
+
+      {/* <Works /> */}
     </div>
   );
 }

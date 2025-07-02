@@ -8,13 +8,13 @@ const cardData: CardData[] = CARDS as CardData[];
 export function Home() {
   return (
     <div className={styles.home}>
-      <Header />
+      {/* <Header /> */}
       
-      <div className={styles.home__content}>
+      {/* <div className={styles.home__content}>
         {cardData.map((card, index) => (
           <Card key={index} {...card} />
         ))}
-      </div>
+      </div> */}
 
       {/* <Works /> */}
     </div>

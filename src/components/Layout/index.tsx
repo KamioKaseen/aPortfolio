@@ -6,7 +6,7 @@ export function Layout({ children }: { children: ReactNode }) {
     <>  
       <Navigation />  
       {children}
-      <Footer />  
+      {/* <Footer />   */}
     </>  
   );  
 };  

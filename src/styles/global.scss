@@ -1,18 +1,16 @@
 @font-face {
-  font-family: 'GeologicaLight';
-  src: url('../assets/fonts/Geologica-Light.woff2') format('woff2');
+  font-family: 'GnuolaneFreeCyrillic';
+  src: 
+    url('../assets/fonts/GnuolaneFreeCyrillic.woff2') format('woff2'),
+    url('../assets/fonts/GnuolaneFreeCyrillic.ttf') format('truetype');
   font-display: swap; 
 }
 
 @font-face {
-  font-family: 'GeologicaExtraLight';
-  src: url('../assets/fonts/Geologica-Thin.woff2') format('woff2');
-  font-display: swap; 
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-family: 'Manrope';
+  src: 
+    url('../assets/fonts/manrope-medium.woff2') format('woff2'),
+    url('../assets/fonts/manrope-medium.ttf') format('truetype');
   font-display: swap; 
 }
 
@@ -42,7 +40,7 @@ html {
 }
 
 body {
-  background-color: $bg-white;
+  background-color: rgb(228, 224, 208);
 }
 
 button {
@@ -63,17 +61,23 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h2 {
   all: unset; 
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
-  max-width: 146rem;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 2.4rem;
 
   // @media (max-width: 768px) {
   //   padding-left: 4rem;
